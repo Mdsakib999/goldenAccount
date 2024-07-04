@@ -25,7 +25,7 @@ const Crypto = () => {
         <div className="bg-slate-900">
             <CommonTitle title={"CRYPTO OPEN-UP"} />
             {/* hhhhhhhhhhhh */}
-            <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl lg:ps-8 mb-5">
+            <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl lg:ps-8 pb-5">
                 {
                     cards.map((card) => (
                         <div data-aos="zoom-in-down" key={card.id} className="h-[400px] w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]">

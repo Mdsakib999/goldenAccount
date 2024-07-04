@@ -4,15 +4,16 @@ import { AiFillDollarCircle } from "react-icons/ai";
 import { IoCube } from "react-icons/io5";
 import { FaAngleRight } from "react-icons/fa6";
 
-const UsaOpen = () => {
-  const [cards, setCards] = useState([]);
+
+const Asia = () => {
+    const [cards, setCards] = useState([]);
 
   useEffect(() => {
     fetch("cryptoData.json")
       .then((res) => res.json())
       .then((data) => {
         const filteredData = data.filter(
-          (product) => product.category === "usa"
+          (product) => product.category === "asia"
         );
         setCards(filteredData);
       });
@@ -21,11 +22,11 @@ const UsaOpen = () => {
 
   console.log(cards);
 
-  return (
-    <div className="bg-slate-900">
-      <CommonTitle title={"USA OPEN-UP INSTANT"} />
+    return (
+        <div className="bg-slate-900">
+      <CommonTitle title={"ASIA/LATIN/AFRICA OPEN-UP INSTANT"} />
 
-      <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl pb-5">
+      <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl pb-12">
         {cards.map((card) => (
           <div 
             key={card.id}
@@ -59,7 +60,7 @@ const UsaOpen = () => {
         ))}
       </div>
     </div>
-  );
+    );
 };
 
-export default UsaOpen;
+export default Asia;

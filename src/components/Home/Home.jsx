@@ -8,6 +8,12 @@ import UsaOpen from './HomeComponents/UsaOpen';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import EuOpen from './HomeComponents/EuOpen';
+import Asia from './HomeComponents/Asia';
+import Canada from './HomeComponents/Canada';
+import UkOpen from './HomeComponents/UkOpen';
+import Manual from './HomeComponents/Manual';
+import Footer from './Footer';
 
 const Home = () => {
     useEffect(() => {
@@ -36,6 +42,21 @@ const Home = () => {
             <Crypto></Crypto>
 
             <UsaOpen></UsaOpen>
+
+            <EuOpen></EuOpen>
+
+            <Canada></Canada>
+
+            <UkOpen></UkOpen>
+
+            <Manual></Manual>
+
+
+
+            <Asia></Asia>
+
+
+            <Footer></Footer>
 
         </div>
     );

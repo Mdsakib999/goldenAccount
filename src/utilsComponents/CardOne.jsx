@@ -1,11 +1,14 @@
 import { AiFillDollarCircle } from "react-icons/ai";
 import { IoCube } from "react-icons/io5";
 import { FaAngleRight } from "react-icons/fa6";
+import AOS from 'aos';
+
+AOS.init({});
 
 const CardOne = ({ data }) => {
     const { title, price, availableInStock, Image } = data
     return (
-        <div className="h-[400px] w-[350px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]">
+        <div data-aos="zoom-in-up" className="h-[400px] w-[350px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]">
             <img className="px-7 pb-7" src={Image} alt={title} />
             <div className="px-7">
                 <p className="text-gray-400 font-semibold">{title}</p>

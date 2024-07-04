@@ -15,8 +15,8 @@ const Business = () => {
     }, [])
     console.log(data);
     return (
-        <div >
-            <CommonTitle tilte={"𝗕𝗨𝗦𝗜𝗡𝗘𝗦𝗦 𝗔𝗖𝗖𝗢𝗨𝗡𝗧𝗦 𝗜𝗡𝗦𝗧𝗔𝗡𝗧"} />
+        <div className="bg-slate-900">
+            <CommonTitle title={"BUSINESS ACCOUNT INSTANT"} />
             <div className="flex justify-center">
                 <CardOne data={data} />
             </div>

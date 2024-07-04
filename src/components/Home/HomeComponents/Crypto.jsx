@@ -28,7 +28,7 @@ const Crypto = () => {
             <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl lg:ps-8 pb-5">
                 {
                     cards.map((card) => (
-                        <div data-aos="zoom-in-down" key={card.id} className="h-[400px] w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]">
+                        <div data-aos="zoom-in-down" key={card.id} className="h-[400px] max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]">
                             <img className="  px-7 pb-7" src={card.Image} alt="" />
                             <div className="px-7">
                                 <p className="text-gray-400 font-semibold">{card.title}</p>

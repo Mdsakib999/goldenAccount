@@ -4,6 +4,8 @@ import { BsPersonSquare } from "react-icons/bs";
 import { IoSearch } from "react-icons/io5";
 import Business from './HomeComponents/Business';
 import Crypto from './HomeComponents/Crypto';
+import UsaOpen from './HomeComponents/UsaOpen';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -32,6 +34,8 @@ const Home = () => {
             </div>
             <Business />
             <Crypto></Crypto>
+
+            <UsaOpen></UsaOpen>
 
         </div>
     );

@@ -16,7 +16,7 @@ const Business = () => {
     console.log(data);
     return (
         <div className="bg-slate-900">
-            <CommonTitle tilte={"BUSINESS ACCOUNT INSTANT"} />
+            <CommonTitle title={"BUSINESS ACCOUNT INSTANT"} />
             <div className="flex justify-center">
                 <CardOne data={data} />
             </div>

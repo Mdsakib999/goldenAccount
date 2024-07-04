@@ -7,8 +7,8 @@ function App() {
 
   return (
     <div className=''>
-        <Outlet></Outlet>
-      </div>
+      <Outlet></Outlet>
+    </div>
   )
 }
 

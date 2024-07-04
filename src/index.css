@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.b{
-    border: 2px solid white;
+body {
+  background-color: #191e2a;
+  color: white;
 }
 
-.bb{
-    border: 2px solid red;
+.b {
+  border: 2px solid white;
+}
+
+.bb {
+  border: 2px solid red;
 }

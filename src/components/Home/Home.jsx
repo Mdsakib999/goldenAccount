@@ -4,10 +4,17 @@ import { BsPersonSquare } from "react-icons/bs";
 import { IoSearch } from "react-icons/io5";
 import Business from './HomeComponents/Business';
 import Crypto from './HomeComponents/Crypto';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
-
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            offset: 200,
+            easing: 'ease-in',
+        });
+    }, []);
 
     return (
         <div>
@@ -24,7 +31,6 @@ const Home = () => {
 
             </div>
             <Business />
-
             <Crypto></Crypto>
 
         </div>

@@ -4,6 +4,7 @@ import { BsPersonSquare } from "react-icons/bs";
 import { IoSearch } from "react-icons/io5";
 import Business from './HomeComponents/Business';
 import Crypto from './HomeComponents/Crypto';
+import UsaOpen from './HomeComponents/UsaOpen';
 
 
 const Home = () => {
@@ -26,6 +27,8 @@ const Home = () => {
             <Business />
 
             <Crypto></Crypto>
+
+            <UsaOpen></UsaOpen>
 
         </div>
     );

@@ -4,7 +4,9 @@ import { AiFillDollarCircle } from 'react-icons/ai';
 import { IoCube } from 'react-icons/io5';
 import { FaAngleRight } from 'react-icons/fa6';
 
-const Crypto = () => {
+
+const UsaOpen = () => {
+
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
@@ -12,20 +14,20 @@ const Crypto = () => {
           .then((res) => res.json())
           .then((data) => {
             const filteredData = data.filter(
-              (product) => product.category === "crypto"
+              (product) => product.category === "usa"
             );
             setCards(filteredData);
           });
         //   .catch((error) => console.error('Error fetching data:', error));
       }, []);
 
-    //   console.log(cards)
+      console.log(cards)
 
     return (
-        <div className="bg-slate-900">
-        <CommonTitle title={"CRYPTO OPEN-UP"} />
+         <div className="bg-slate-900">
+        <CommonTitle title={"USA OPEN-UP INSTANT"} />
         
-        <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl lg:ps-8 pb-5">
+        <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl lg:ps-8 mb-5">
         {
             cards.map((card) => (
                 <div key={card.id} className="h-[400px] w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]">
@@ -53,4 +55,4 @@ const Crypto = () => {
     );
 };
 
-export default Crypto;
+export default UsaOpen;

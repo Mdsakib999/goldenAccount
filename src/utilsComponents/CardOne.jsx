@@ -5,8 +5,8 @@ import { FaAngleRight } from "react-icons/fa6";
 const CardOne = ({ data }) => {
     const { title, price, availableInStock, Image } = data
     return (
-        <div className="h-[400px] w-[350px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]">
-            <img className="px-7 pb-7" src={Image} alt={title} />
+        <div className="h-[400px] w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]">
+            <img className="  px-7 pb-7" src={Image} alt={title} />
             <div className="px-7">
                 <p className="text-gray-400 font-semibold">{title}</p>
                 <p className="text-[#166E3B] font-semibold mt-2 flex items-center">

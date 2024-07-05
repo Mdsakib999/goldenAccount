@@ -4,15 +4,16 @@ import { AiFillDollarCircle } from "react-icons/ai";
 import { IoCube } from "react-icons/io5";
 import { FaAngleRight } from "react-icons/fa6";
 
-const UsaOpen = () => {
-  const [cards, setCards] = useState([]);
+
+const Manual = () => {
+    const [cards, setCards] = useState([]);
 
   useEffect(() => {
     fetch("cryptoData.json")
       .then((res) => res.json())
       .then((data) => {
         const filteredData = data.filter(
-          (product) => product.category === "usa"
+          (product) => product.category === "manual"
         );
         setCards(filteredData);
       });
@@ -21,11 +22,11 @@ const UsaOpen = () => {
 
   console.log(cards);
 
-  return (
-    <div className="bg-slate-900">
-      <CommonTitle title={"USA OPEN-UP INSTANT"} />
+    return (
+        <div className="bg-slate-900">
+      <CommonTitle title={"UK OPEN-UP INSTANT"} />
 
-      <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl pb-5">
+      <div className="w-[90%] mx-auto md:flex justify-center lg:mt-8 max-w-7xl  pb-12">
         {cards.map((card) => (
           <div 
             key={card.id}
@@ -46,11 +47,11 @@ const UsaOpen = () => {
             </div>
 
             {/* purchase */}
-            <div className=" text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
+            <div className=" py-1 text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
               <span className=" ms-4  flex items-center">
                 <IoCube className="text-base  mr-1" /> {card.availableInStock}
               </span>
-              <button className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
+              <button className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
                 <span>Purchase</span>
                 <FaAngleRight className="text-xl ml-1" />
               </button>
@@ -59,7 +60,7 @@ const UsaOpen = () => {
         ))}
       </div>
     </div>
-  );
+    );
 };
 
-export default UsaOpen;
+export default Manual;

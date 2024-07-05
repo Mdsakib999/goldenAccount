@@ -1,32 +1,33 @@
-import React, { useEffect, useState } from 'react';
-import CommonTitle from '../../../utilsComponents/CommonTitle';
-import { AiFillDollarCircle } from 'react-icons/ai';
-import { IoCube } from 'react-icons/io5';
-import { FaAngleRight } from 'react-icons/fa6';
+import React, { useEffect, useState } from "react";
+import CommonTitle from "../../../utilsComponents/CommonTitle";
+import { AiFillDollarCircle } from "react-icons/ai";
+import { IoCube } from "react-icons/io5";
+import { FaAngleRight } from "react-icons/fa6";
 
-const Crypto = () => {
+const EuOpen = () => {
+
     const [cards, setCards] = useState([]);
 
-    useEffect(() => {
-        fetch("cryptoData.json")
-            .then((res) => res.json())
-            .then((data) => {
-                const filteredData = data.filter(
-                    (product) => product.category === "crypto"
-                );
-                setCards(filteredData);
-            });
-        //   .catch((error) => console.error('Error fetching data:', error));
-    }, []);
+  useEffect(() => {
+    fetch("cryptoData.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const filteredData = data.filter(
+          (product) => product.category === "EuOpen"
+        );
+        setCards(filteredData);
+      });
+    //   .catch((error) => console.error('Error fetching data:', error));
+  }, []);
 
-    console.log(cards)
+  console.log(cards);
 
     return (
         <div className="bg-slate-900">
-            <CommonTitle title={"CRYPTO OPEN-UP"} />
-            {/* hhhhhhhhhhhh */}
-            <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl pb-5">
-                {
+      <CommonTitle title={"EU OPEN-UP INSTANT"} />
+
+      <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl pb-5">
+      {
                     cards.map((card) => (
                         <div data-aos="zoom-in-down" key={card.id} className="h-[400px] max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]">
                             <img className="  px-7 pb-7" src={card.Image} alt="" />
@@ -48,9 +49,9 @@ const Crypto = () => {
                         </div>
 
                     ))}
-            </div>
-        </div>
+      </div>
+    </div>
     );
 };
 
-export default Crypto;
+export default EuOpen;

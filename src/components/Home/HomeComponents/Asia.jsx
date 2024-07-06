@@ -26,7 +26,7 @@ const Asia = () => {
         <div className="bg-slate-900">
       <CommonTitle title={"ASIA/LATIN/AFRICA OPEN-UP INSTANT"} />
 
-      <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl pb-12">
+      <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl pb-12 b">
         {cards.map((card) => (
           <div 
             key={card.id}

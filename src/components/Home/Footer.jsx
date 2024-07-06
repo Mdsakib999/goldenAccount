@@ -1,16 +1,16 @@
 import React from "react";
 import { AiFillDiscord } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa6";
-
+import CommonTitle from "../../utilsComponents/CommonTitle";
 
 const Footer = () => {
   return (
     <div className="bg-gray-800 ">
       {/* footer */}
-      <div className="bb w-[90%] mx-auto lg: max-w-7xl pb-5 pt-16 flex gap-x-6">
-        <div className=" md:w-[30%] flex items-center gap-x-5">
+      <div className=" w-[90%] mx-auto lg: max-w-7xl pb-5 pt-16 flex gap-x-6">
+        <div className=" md:w-[30%] flex  gap-x-5 ">
           <img
-            className="w-[20%] "
+            className="w-[20%] h-[80px]"
             src="https://imagedelivery.net/8KF1g3-Pi-ph225F906vPQ/901b7a98-19a3-4dc4-c0fb-a229e8918000/public"
             alt=""
           />
@@ -18,21 +18,95 @@ const Footer = () => {
           <p className="text-lg font-semibold">GOLDEN ACCOUNTS</p>
         </div>
 
-        <div className="flex w-[60%] justify-between "> 
-          <div>
+        <div className="flex w-[60%] justify-between ">
+          <div className="">
             <p className="font-semibold text-lg mb-3">OUR PRODUCTS</p>
-            <p className="text-">Home</p>
+            <p className="text-slate-500 hover:text-slate-400 font-semibold">Home</p>
+
+            <div className="flex items-center group my-2 ">
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1 "></div>
+              <p className="uppercase font-semibold text-slate-500 group-hover:text-slate-400 text-center  py-1 ">
+                Business Accounts instant
+              </p>
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1"></div>
+            </div>
+
+            <div className="flex items-center group my-2 ">
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1 "></div>
+              <p className="uppercase font-semibold text-slate-500 group-hover:text-slate-400   py-1 ">
+                crypto open-up
+              </p>
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1"></div>
+            </div>
+
+            <div className="flex items-center group my-2 ">
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1 "></div>
+              <p className="uppercase font-semibold text-slate-500 group-hover:text-slate-400 text-center  py-1 ">
+                usa open-up instant
+              </p>
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1"></div>
+            </div>
+            <div className="flex items-center group my-2 ">
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1 "></div>
+              <p className="uppercase font-semibold text-slate-500 group-hover:text-slate-400 text-center  py-1 ">
+                Eu Open-up instant
+              </p>
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1"></div>
+            </div>
+            <div className="flex items-center group my-2 ">
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1 "></div>
+              <p className="uppercase font-semibold text-slate-500 group-hover:text-slate-400 text-center  py-1 ">
+                argentina banks
+              </p>
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1"></div>
+            </div>
+            <div className="flex items-center group my-2 ">
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1 "></div>
+              <p className="uppercase font-semibold text-slate-500 group-hover:text-slate-400 text-center  py-1 ">
+                Canada open-up instant
+              </p>
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1"></div>
+            </div>
+            <div className="flex items-center group my-2 ">
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1 "></div>
+              <p className="uppercase font-semibold text-slate-500 group-hover:text-slate-400 text-center  py-1 ">
+                UK open-up instant
+              </p>
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1"></div>
+            </div>
+            <div className="flex items-center group my-2 ">
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1 "></div>
+              <p className="uppercase font-semibold text-slate-500 group-hover:text-slate-400 text-center  py-1 ">
+                Manual delivery items
+              </p>
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1"></div>
+            </div>
+            <div className="flex items-center group my-2 ">
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1 "></div>
+              <p className="uppercase font-semibold text-slate-500 group-hover:text-slate-400 text-center  py-1 ">
+                Asia/latin/africa open-up instant
+              </p>
+              <div className="w-[40px] bg-slate-500 group-hover:bg-slate-400 h-[2px] mt-1"></div>
+            </div>
+
+
           </div>
 
           <div>
             <p className="font-semibold text-lg mb-3">SOCIAL</p>
-            <p className="text-slate-500 font-semibold mb-2 flex items-center gap-x-2"><AiFillDiscord className="text-xl"></AiFillDiscord> Discord</p>
-            <p className="text-slate-500 font-semibold mb-2 flex items-center gap-x-2"><FaTelegram className="text-xl"></FaTelegram> Telegram</p>
+            <p className="text-slate-500 font-semibold mb-2 flex items-center gap-x-2">
+              <AiFillDiscord className="text-xl"></AiFillDiscord> Discord
+            </p>
+            <p className="text-slate-500 font-semibold mb-2 flex items-center gap-x-2">
+              <FaTelegram className="text-xl"></FaTelegram> Telegram
+            </p>
           </div>
 
           <div>
             <p className="font-semibold text-lg mb-3">LEGAL</p>
-            <p className="text-slate-500 font-semibold mb-2 ">Terms of Service</p>
+            <p className="text-slate-500 font-semibold mb-2 ">
+              Terms of Service
+            </p>
             <p className="text-slate-500 font-semibold mb-2 ">Privacy Policy</p>
           </div>
         </div>

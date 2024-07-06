@@ -3,11 +3,14 @@ import CommonTitle from "../../../utilsComponents/CommonTitle";
 import { AiFillDollarCircle } from "react-icons/ai";
 import { IoCube } from "react-icons/io5";
 import { FaAngleRight } from "react-icons/fa6";
+import Modal from "../../../utilsComponents/Modal";
 
 
 const UkOpen = () => {
-    const [cards, setCards] = useState([]);
-
+  const [cards, setCards] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = (data) => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   useEffect(() => {
     fetch("cryptoData.json")
       .then((res) => res.json())
@@ -22,13 +25,13 @@ const UkOpen = () => {
 
   console.log(cards);
 
-    return (
-        <div className="bg-slate-900">
+  return (
+    <div className="bg-slate-900">
       <CommonTitle title={"UK OPEN-UP INSTANT"} />
 
       <div className="w-[90%] mx-auto md:flex justify-center lg:mt-8 max-w-7xl  pb-12">
         {cards.map((card) => (
-          <div 
+          <div
             key={card.id}
             data-aos="zoom-in-down"
             className=" h-[200px] md:max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]"
@@ -51,7 +54,7 @@ const UkOpen = () => {
               <span className=" ms-4  flex items-center">
                 <IoCube className="text-base  mr-1" /> {card.availableInStock}
               </span>
-              <button className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
+              <button onClick={() => openModal(card)} className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
                 <span>Purchase</span>
                 <FaAngleRight className="text-xl ml-1" />
               </button>
@@ -59,8 +62,17 @@ const UkOpen = () => {
           </div>
         ))}
       </div>
+      <Modal isOpen={isModalOpen} onClose={closeModal} >
+        <div>
+          <h1>hello</h1>
+          modal content
+
+
+          {/* here write modal content */}
+        </div>
+      </Modal>
     </div>
-    );
+  );
 };
 
 export default UkOpen;

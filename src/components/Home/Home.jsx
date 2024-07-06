@@ -39,7 +39,7 @@ const Home = () => {
 
             </div>
             <Business />
-            
+
             <Crypto></Crypto>
 
             <UsaOpen></UsaOpen>
@@ -51,8 +51,6 @@ const Home = () => {
             <UkOpen></UkOpen>
 
             <Manual></Manual>
-
-
 
             <Asia></Asia>
 

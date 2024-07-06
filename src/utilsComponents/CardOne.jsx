@@ -2,11 +2,14 @@ import { AiFillDollarCircle } from "react-icons/ai";
 import { IoCube } from "react-icons/io5";
 import { FaAngleRight } from "react-icons/fa6";
 import AOS from 'aos';
+import { useState } from "react";
 
 AOS.init({});
 
-const CardOne = ({ data }) => {
+const CardOne = ({ data, openModal }) => {
+
     const { title, price, availableInStock, Image } = data
+
     return (
         <div data-aos="zoom-in-up" className="h-[400px] w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]">
             <img className="  px-7 pb-7" src={Image} alt={title} />
@@ -20,11 +23,12 @@ const CardOne = ({ data }) => {
                 <span className=" ms-4  flex items-center">
                     <IoCube className="text-base  mr-1" /> {availableInStock}
                 </span>
-                <button className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
+                <button onClick={openModal} className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
                     <span>Purchase</span>
                     <FaAngleRight className="text-xl ml-1" />
                 </button>
             </div>
+
         </div>
     );
 };

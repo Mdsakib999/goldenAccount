@@ -8,7 +8,7 @@ AOS.init({});
 const CardOne = ({ data }) => {
     const { title, price, availableInStock, Image } = data
     return (
-        <div data-aos="zoom-in-up" className="h-[400px] w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]">
+        <div data-aos="zoom-in-up" className="h-[420px] w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]">
             <img className="  px-7 pb-7" src={Image} alt={title} />
             <div className="px-7">
                 <p className="text-gray-400 font-semibold">{title}</p>

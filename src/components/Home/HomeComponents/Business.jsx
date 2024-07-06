@@ -6,7 +6,7 @@ import Modal from "../../../utilsComponents/Modal";
 
 const Business = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const openModal = () => setIsModalOpen(true);
+    const openModal = (data) => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
 
     const [datas, setData] = useState([])

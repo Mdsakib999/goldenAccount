@@ -23,7 +23,7 @@ const CardOne = ({ data, openModal }) => {
                 <span className=" ms-4  flex items-center">
                     <IoCube className="text-base  mr-1" /> {availableInStock}
                 </span>
-                <button onClick={openModal} className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
+                <button onClick={() => openModal(data)} className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
                     <span>Purchase</span>
                     <FaAngleRight className="text-xl ml-1" />
                 </button>

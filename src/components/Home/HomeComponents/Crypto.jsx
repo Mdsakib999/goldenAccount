@@ -3,9 +3,13 @@ import CommonTitle from '../../../utilsComponents/CommonTitle';
 import { AiFillDollarCircle } from 'react-icons/ai';
 import { IoCube } from 'react-icons/io5';
 import { FaAngleRight } from 'react-icons/fa6';
+import Modal from '../../../utilsComponents/Modal';
 
 const Crypto = () => {
     const [cards, setCards] = useState([]);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const openModal = (data) => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
 
     useEffect(() => {
         fetch("cryptoData.json")
@@ -40,7 +44,7 @@ const Crypto = () => {
                                 <span className=" ms-4  flex items-center">
                                     <IoCube className="text-base  mr-1" /> {card.availableInStock}
                                 </span>
-                                <button className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
+                                <button onClick={() => openModal(card)} className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
                                     <span>Purchase</span>
                                     <FaAngleRight className="text-xl ml-1" />
                                 </button>
@@ -49,6 +53,15 @@ const Crypto = () => {
 
                     ))}
             </div>
+            <Modal isOpen={isModalOpen} onClose={closeModal} >
+                <div>
+                    <h1>hello</h1>
+                    modal content
+                    <p>crypto</p>
+
+                    {/* here write modal content */}
+                </div>
+            </Modal>
         </div>
     );
 };

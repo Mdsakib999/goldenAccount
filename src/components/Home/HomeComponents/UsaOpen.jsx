@@ -3,10 +3,13 @@ import CommonTitle from "../../../utilsComponents/CommonTitle";
 import { AiFillDollarCircle } from "react-icons/ai";
 import { IoCube } from "react-icons/io5";
 import { FaAngleRight } from "react-icons/fa6";
+import Modal from "../../../utilsComponents/Modal";
 
 const UsaOpen = () => {
   const [cards, setCards] = useState([]);
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = (data) => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   useEffect(() => {
     fetch("cryptoData.json")
       .then((res) => res.json())
@@ -25,9 +28,9 @@ const UsaOpen = () => {
     <div className="bg-slate-900">
       <CommonTitle title={"USA OPEN-UP INSTANT"} />
 
-      <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl pb-5">
+      <div className=" mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl pb-5">
         {cards.map((card) => (
-          <div 
+          <div
             key={card.id}
             data-aos="zoom-in-down"
             className=" h-[200px] md:max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]"
@@ -50,7 +53,7 @@ const UsaOpen = () => {
               <span className=" ms-4  flex items-center">
                 <IoCube className="text-base  mr-1" /> {card.availableInStock}
               </span>
-              <button className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
+              <button onClick={() => openModal(card)} className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
                 <span>Purchase</span>
                 <FaAngleRight className="text-xl ml-1" />
               </button>
@@ -58,6 +61,15 @@ const UsaOpen = () => {
           </div>
         ))}
       </div>
+      <Modal isOpen={isModalOpen} onClose={closeModal} >
+        <div>
+          <h1>hello</h1>
+          modal content
+
+
+          {/* here write modal content */}
+        </div>
+      </Modal>
     </div>
   );
 };

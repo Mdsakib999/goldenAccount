@@ -17,10 +17,10 @@ const Modal = ({ isOpen, onClose, children }) => {
                 isOpen && (
                     <div
                         onClick={handleOutsideClick}
-                        className="h-full w-full fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50">
+                        className="h-full w-full fixed inset-0 flex justify-center items-center bg-black bg-opacity-20 backdrop-blur-md z-50">
                         <button
                             onClick={onClose}
-                            className="absolute top-2 right-2 text-gray-600 hover:text-gray-900 focus:outline-none"
+                            className="absolute top-2 right-2 text-white  focus:outline-none"
                         >
                             <svg
                                 className="w-6 h-6"

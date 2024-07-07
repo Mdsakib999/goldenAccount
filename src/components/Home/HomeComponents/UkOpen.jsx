@@ -50,7 +50,7 @@ const UkOpen = () => {
             </div>
 
             {/* purchase */}
-            <div className=" py-1 text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
+            <div className="  text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
               <span className=" ms-4  flex items-center">
                 <IoCube className="text-base  mr-1" /> {card.availableInStock}
               </span>

@@ -4,7 +4,8 @@ import { AiFillDollarCircle } from "react-icons/ai";
 import { IoCube } from "react-icons/io5";
 import { FaAngleRight } from "react-icons/fa6";
 import Modal from "../../../utilsComponents/Modal";
-
+import { FaCircleInfo } from "react-icons/fa6";
+import { BsInfoLg } from "react-icons/bs";
 
 const Manual = () => {
   const [cards, setCards] = useState([]);
@@ -29,7 +30,7 @@ const Manual = () => {
     <div className="bg-slate-900 md:pt-12">
       <CommonTitle title={"MANUAL DELIVERY ITEMS"} />
 
-      <div className="w-[90%] mx-auto md:flex justify-center lg:mt-8 max-w-7xl  pb-12">
+      <div className="w-[90%] mx-auto md:flex justify-center gap-x-10 lg:mt-8 md:max-w-7xl  pb-12 ">
         {cards.map((card) => (
           <div
             key={card.id}
@@ -50,24 +51,68 @@ const Manual = () => {
             </div>
 
             {/* purchase */}
-            <div className=" py-1 text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
+            <div className=" text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
               <span className=" ms-4  flex items-center">
                 <IoCube className="text-base  mr-1" /> {card.availableInStock}
               </span>
-              <button onClick={() => openModal(card)} className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
+              <button
+                onClick={() => openModal(card)}
+                className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1"
+              >
                 <span>Purchase</span>
                 <FaAngleRight className="text-xl ml-1" />
               </button>
             </div>
           </div>
         ))}
+
+        <div
+          data-aos="zoom-in-down"
+          className="  md:max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B] "
+        >
+          <div className=" flex items-center bg-gradient-to-r from-[#473596] to-[#964FE6]">
+
+            <div className="w-[55%]  "> <BsInfoLg className="text-3xl  ml-[35%]"/> </div>
+
+            {/* price */}
+            <div className="px-8 pt-6 pb-8 mb-8 text-gray-300 bg-gradient-to-r from-[#1E2836] to-[#10192B]">
+              <p className=" font-semibold text-lg ">
+                Information On Manual Delivery:
+              </p>
+              <p className="  mt-3 ">
+                In this Category, Product are Delivered Manually to E-mail.
+              </p>
+
+              <p className="mt-4  mb">Q&A: How Long Till I Receive?</p>
+              <ul class="list-disc list-inside mt-3 mb-4">
+                <li class="">Item 1</li>
+              </ul>
+
+              <p>What Is The Warranty On These?</p>
+              <ul class="list-disc list-inside mt-3">
+                <li class="">Item 1</li>
+              </ul>
+
+              <p className="mt-4 flex items-center gap-x-3 text-blue-600">
+                <FaCircleInfo /> Info
+              </p>
+            </div>
+          </div>
+
+          {/* purchase */}
+          <div className=" text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
+            <span className=" ms-4  flex items-center w-[50%] "></span>
+            <button className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-2">
+              <span>Purchase</span>
+              <FaAngleRight className="text-xl ml-1" />
+            </button>
+          </div>
+        </div>
       </div>
-      <Modal isOpen={isModalOpen} onClose={closeModal} >
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
         <div>
           <h1>hello</h1>
           modal content
-
-
           {/* here write modal content */}
         </div>
       </Modal>

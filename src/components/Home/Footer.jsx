@@ -112,7 +112,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
+{/* hhhhhhhh */}
       <div class="pb-10 max-w-7xl mx-auto flex justify-end">
         <div class="text-white flex items-center rounded-md shadow-xl md:w-[30%] w-[70%] mx-auto md:mx-0">
           <div class="bg-gray-700 w-2/5 py-4 rounded-l-md">

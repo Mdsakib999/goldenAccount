@@ -14,6 +14,7 @@ import Canada from './HomeComponents/Canada';
 import UkOpen from './HomeComponents/UkOpen';
 import Manual from './HomeComponents/Manual';
 import Footer from './Footer';
+import Argentina from './HomeComponents/Argentina';
 
 const Home = () => {
     useEffect(() => {
@@ -45,6 +46,8 @@ const Home = () => {
             <UsaOpen></UsaOpen>
 
             <EuOpen></EuOpen>
+
+            <Argentina></Argentina>
 
             <Canada></Canada>
 

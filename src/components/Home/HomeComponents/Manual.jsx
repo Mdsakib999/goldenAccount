@@ -26,8 +26,8 @@ const Manual = () => {
   console.log(cards);
 
   return (
-    <div className="bg-slate-900">
-      <CommonTitle title={"UK OPEN-UP INSTANT"} />
+    <div className="bg-slate-900 md:pt-12">
+      <CommonTitle title={"MANUAL DELIVERY ITEMS"} />
 
       <div className="w-[90%] mx-auto md:flex justify-center lg:mt-8 max-w-7xl  pb-12">
         {cards.map((card) => (

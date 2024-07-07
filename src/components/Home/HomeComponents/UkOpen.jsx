@@ -26,7 +26,7 @@ const UkOpen = () => {
   console.log(cards);
 
   return (
-    <div className="bg-slate-900">
+    <div className="bg-slate-900 md:pt-10">
       <CommonTitle title={"UK OPEN-UP INSTANT"} />
 
       <div className="w-[90%] mx-auto md:flex justify-center lg:mt-8 max-w-7xl  pb-12">

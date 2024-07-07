@@ -27,10 +27,10 @@ const Asia = () => {
   console.log(cards);
 
   return (
-    <div className="bg-slate-900">
+    <div className="bg-slate-900 md:pt-16 pb-20">
       <CommonTitle title={"ASIA/LATIN/AFRICA OPEN-UP INSTANT"} />
 
-      <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl pb-12 ">
+      <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl ">
         {cards.map((card) => (
           <div
             key={card.id}

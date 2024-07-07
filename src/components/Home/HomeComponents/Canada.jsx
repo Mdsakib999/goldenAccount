@@ -26,7 +26,7 @@ const Canada = () => {
   console.log(cards);
 
   return (
-    <div className="bg-slate-900">
+    <div className="bg-slate-900 md:pt-16">
       <CommonTitle title={"CANADA OPEN-UP INSTANT"} />
 
       <div className="w-[90%] mx-auto md:flex justify-center lg:mt-8 max-w-7xl  pb-12">

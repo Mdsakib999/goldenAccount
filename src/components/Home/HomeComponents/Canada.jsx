@@ -28,10 +28,13 @@ const Canada = () => {
 
   return (
     <div className="bg-slate-900 md:pt-16 relative">
-      <CommonTitle title={"CANADA OPEN-UP INSTANT"} />
 
-      <div className="absolute md:right-[36%] right-[4%] lg:right-[27%] top-[30px] md:top-[105px]">
-          <Dot3></Dot3>
+      <div className="flex justify-center items-center">
+          <CommonTitle title={"CANADA OPEN-UP INSTANT"} />
+
+          <div className="mb-4">
+            <Dot3></Dot3>
+          </div>
         </div>
 
       <div className="w-[90%] mx-auto md:flex justify-center lg:mt-8 max-w-7xl  pb-12">

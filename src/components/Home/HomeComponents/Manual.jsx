@@ -29,11 +29,13 @@ const Manual = () => {
 
   return (
     <div className="bg-slate-900 md:pt-12 relative">
-      <CommonTitle title={"MANUAL DELIVERY ITEMS"} />
+      <div className="flex justify-center items-center">
+        <CommonTitle title={"MANUAL DELIVERY ITEMS"} />
 
-      <div className="absolute md:right-[36%] right-[4%] lg:right-[28%] top-[30px] md:top-[90px]">
+        <div className="mb-4">
           <Dot3></Dot3>
         </div>
+      </div>
 
       <div className="w-[90%] mx-auto md:flex justify-center gap-x-10 lg:mt-8 md:max-w-7xl  pb-12 ">
         {cards.map((card) => (
@@ -76,8 +78,10 @@ const Manual = () => {
           className="  md:max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B] "
         >
           <div className=" flex items-center bg-gradient-to-r from-[#473596] to-[#964FE6]">
-
-            <div className="w-[55%]  "> <BsInfoLg className="text-3xl  ml-[35%]" /> </div>
+            <div className="w-[55%]  ">
+              {" "}
+              <BsInfoLg className="text-3xl  ml-[35%]" />{" "}
+            </div>
 
             {/* price */}
             <div className="px-8 pt-6 pb-8 mb-8 text-gray-300 bg-gradient-to-r from-[#1E2836] to-[#10192B]">
@@ -107,7 +111,10 @@ const Manual = () => {
           {/* purchase */}
           <div className=" text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
             <span className=" ms-4  flex items-center w-[50%] "></span>
-            <button onClick={() => openModal()} className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-2">
+            <button
+              onClick={() => openModal()}
+              className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-2"
+            >
               <span>Purchase</span>
               <FaAngleRight className="text-xl ml-1" />
             </button>
@@ -121,7 +128,7 @@ const Manual = () => {
           {/* here write modal content */}
         </div>
       </Modal>
-    </div >
+    </div>
   );
 };
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { MdAccountBalanceWallet, MdReceipt } from "react-icons/md";
-import { IoMdCalendar, IoMdPricetag } from "react-icons/io";
+import { IoMdCalendar, IoMdPricetag, IoIosArrowForward } from "react-icons/io";
 import { SiLitecoin, SiDogecoin, SiTether, SiPolygon } from "react-icons/si";
 import { v4 as uuid } from "uuid";
 import Modal2 from "../../utilsComponents/Modal2";
@@ -41,7 +41,7 @@ const Payment = () => {
     const { title, price } = data
     return (
         <div>
-            <div className="w-[80%] mx-auto flex  max-w-7xl">
+            <div className="w-[80%] mx-auto flex  max-w-7xl my-16">
                 <div className="bg-gradient-to-b from-[#402B8B] to-[#6A21A7] w-[40%] px-7 rounded-s-lg py-9">
                     <p className=" font-semibold text-[#C5BAD6]">Your order</p>
                     <p className="text-xl font-medium mt-2" >{title}</p>
@@ -78,7 +78,7 @@ const Payment = () => {
 
                     </div>
                 </div>
-                <div className="w-[80%] px-7 bg-[#1F2937] rounded-e-lg ">
+                <div className="w-[80%] relative px-7 bg-[#1F2937] rounded-e-lg ">
 
                     <p className="text-4xl font-bold text-center mt-12">Select a payment method</p>
                     <div className="border-2 border-[#9B7DF5] p-4 mt-8 flex justify-between rounded-lg">
@@ -102,6 +102,20 @@ const Payment = () => {
                             <SiTether className="size-4" />
 
                         </div>
+                    </div>
+                    <div className=" absolute bottom-5 right-0 left-0 flex justify-between px-8">
+                        <Link to={'/'}>
+                            <Button
+                                className={`text-black border bg-white hover:border-black rounded-md px-3 py-1`}>
+                                Back to Shop
+                            </Button>
+                        </Link>
+                        <Button
+                            className="inline-flex items-center gap-2 rounded-md bg-[#8262dc] py-1.5 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-[#714DD2] data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700"
+                        >
+                            Continue to payment <IoIosArrowForward />
+
+                        </Button>
                     </div>
                 </div>
             </div>

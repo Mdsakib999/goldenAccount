@@ -57,9 +57,6 @@ const Home = () => {
 
             <Asia></Asia>
 
-
-            <Footer></Footer>
-
         </div>
     );
 };

@@ -4,6 +4,7 @@ import { AiFillDollarCircle } from "react-icons/ai";
 import { IoCube } from "react-icons/io5";
 import { FaAngleRight } from "react-icons/fa6";
 import Modal from "../../../utilsComponents/Modal";
+import Dot3 from "./Dot3";
 
 
 const Asia = () => {
@@ -27,8 +28,13 @@ const Asia = () => {
   console.log(cards);
 
   return (
-    <div className="bg-slate-900 md:pt-16 pb-20">
+    <div className="bg-slate-900 md:pt-16 pb-20 relative">
       <CommonTitle title={"ASIA/LATIN/AFRICA OPEN-UP INSTANT"} />
+
+      {/* 3 dot section */}
+      <div className="absolute md:right-[36%] right-[4%] lg:right-[21%] top-[30px] md:top-[106px]">
+          <Dot3></Dot3>
+        </div>
 
       <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl ">
         {cards.map((card) => (

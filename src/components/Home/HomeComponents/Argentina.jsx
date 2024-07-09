@@ -5,6 +5,7 @@ import { IoCube } from "react-icons/io5";
 import { FaAngleRight, FaCircleInfo } from "react-icons/fa6";
 import Modal from "../../../utilsComponents/Modal";
 import { BsInfoLg } from "react-icons/bs";
+import Dot3 from "./Dot3";
 
 const Argentina = () => {
   const [cards, setCards] = useState([]);
@@ -25,8 +26,13 @@ const Argentina = () => {
   }, []);
 
   return (
-    <div className="bg-slate-900  md:pt-16">
+    <div className="bg-slate-900  md:pt-16 relative">
       <CommonTitle title={"ARGENTINA BANKS"} />
+
+      {/* 3 dot section */}
+      <div className="absolute md:right-[36%] right-[8%] lg:right-[31%] top-[30px] md:top-[106px]">
+          <Dot3></Dot3>
+        </div>
 
       {/* w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl pb-5 */}
       <div className="w-[90%] mx-auto md:flex justify-center gap-x-10 lg:mt-8 max-w-7xl  pb-12">
@@ -34,7 +40,7 @@ const Argentina = () => {
           <div
             data-aos="zoom-in-down"
             key={card.id}
-            className="h-[420px] max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]"
+            className="h-[420px] max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B] mb-10 md:mb-0"
           >
             <img className="  px-7 pb-7" src={card.Image} alt="" />
             <div className="px-7">

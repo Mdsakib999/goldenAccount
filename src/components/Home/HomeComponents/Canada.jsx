@@ -4,6 +4,7 @@ import { AiFillDollarCircle } from "react-icons/ai";
 import { IoCube } from "react-icons/io5";
 import { FaAngleRight } from "react-icons/fa6";
 import Modal from "../../../utilsComponents/Modal";
+import Dot3 from "./Dot3";
 
 
 const Canada = () => {
@@ -26,8 +27,12 @@ const Canada = () => {
   console.log(cards);
 
   return (
-    <div className="bg-slate-900 md:pt-16">
+    <div className="bg-slate-900 md:pt-16 relative">
       <CommonTitle title={"CANADA OPEN-UP INSTANT"} />
+
+      <div className="absolute md:right-[36%] right-[4%] lg:right-[27%] top-[30px] md:top-[105px]">
+          <Dot3></Dot3>
+        </div>
 
       <div className="w-[90%] mx-auto md:flex justify-center lg:mt-8 max-w-7xl  pb-12">
         {cards.map((card) => (

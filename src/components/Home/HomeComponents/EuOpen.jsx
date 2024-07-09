@@ -4,6 +4,7 @@ import { AiFillDollarCircle } from "react-icons/ai";
 import { IoCube } from "react-icons/io5";
 import { FaAngleRight } from "react-icons/fa6";
 import Modal from "../../../utilsComponents/Modal";
+import Dot3 from "./Dot3";
 
 const EuOpen = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,8 +27,12 @@ const EuOpen = () => {
   console.log(cards);
 
   return (
-    <div className="bg-slate-900 md:pt-16">
+    <div className="bg-slate-900 md:pt-16 relative">
       <CommonTitle title={"EU OPEN-UP INSTANT"} />
+
+      <div className="absolute md:right-[36%] right-[8%] lg:right-[30%] top-[30px] md:top-[107px]">
+          <Dot3></Dot3>
+        </div>
 
       <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl pb-5">
         {

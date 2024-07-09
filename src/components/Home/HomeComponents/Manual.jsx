@@ -6,6 +6,7 @@ import { FaAngleRight } from "react-icons/fa6";
 import Modal from "../../../utilsComponents/Modal";
 import { FaCircleInfo } from "react-icons/fa6";
 import { BsInfoLg } from "react-icons/bs";
+import Dot3 from "./Dot3";
 
 const Manual = () => {
   const [cards, setCards] = useState([]);
@@ -27,20 +28,24 @@ const Manual = () => {
   console.log(cards);
 
   return (
-    <div className="bg-slate-900 md:pt-12">
+    <div className="bg-slate-900 md:pt-12 relative">
       <CommonTitle title={"MANUAL DELIVERY ITEMS"} />
+
+      <div className="absolute md:right-[36%] right-[4%] lg:right-[28%] top-[30px] md:top-[90px]">
+          <Dot3></Dot3>
+        </div>
 
       <div className="w-[90%] mx-auto md:flex justify-center gap-x-10 lg:mt-8 md:max-w-7xl  pb-12 ">
         {cards.map((card) => (
           <div
             key={card.id}
             data-aos="zoom-in-down"
-            className=" h-[200px] md:max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]"
+            className=" h-[200px] md:max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]  mb-10 md:mb-0"
           >
             <div className=" flex items-center pt-6">
               <img className=" px-3 w-[45%] " src={card.Image} alt="" />
 
-              {/* price */}
+              {/* price div added*/}
               <div className="px-3 ">
                 <p className="text-gray-300 font-semibold ">{card.title}</p>
                 <p className="text-[#166E3B] font-semibold mt-2 flex items-center">

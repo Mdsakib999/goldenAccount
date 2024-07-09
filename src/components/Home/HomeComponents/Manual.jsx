@@ -40,7 +40,7 @@ const Manual = () => {
             <div className=" flex items-center pt-6">
               <img className=" px-3 w-[45%] " src={card.Image} alt="" />
 
-              {/* price */}
+              {/* price div added*/}
               <div className="px-3 ">
                 <p className="text-gray-300 font-semibold ">{card.title}</p>
                 <p className="text-[#166E3B] font-semibold mt-2 flex items-center">

@@ -7,6 +7,7 @@ import Modal from "../../../utilsComponents/Modal";
 import { FaCircleInfo } from "react-icons/fa6";
 import { BsInfoLg } from "react-icons/bs";
 import Dot3 from "./Dot3";
+import Tooltip from "../../../utilsComponents/Tooltip";
 
 const Manual = () => {
   const [cards, setCards] = useState([]);
@@ -59,9 +60,12 @@ const Manual = () => {
 
             {/* purchase */}
             <div className=" text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
-              <span className=" ms-4  flex items-center">
-                <IoCube className="text-base  mr-1" /> {card.availableInStock}
-              </span>
+              <Tooltip availableInStock={card.availableInStock} message={`There's currently ${card.availableInStock} item left in stock `}>
+                <button className={`ms-4 flex items-center ${!card.availableInStock == 0 ? "hover:text-[#6366F1]" : 'hover:text-red-700'}`}>
+                  <IoCube className="text-base mr-1" />
+                  {card.availableInStock}
+                </button>
+              </Tooltip>
               <button
                 onClick={() => openModal(card)}
                 className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1"

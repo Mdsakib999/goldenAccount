@@ -27,7 +27,6 @@ const Argentina = () => {
 
   return (
     <div className="bg-slate-900  md:pt-16 relative">
-
       <div className="flex justify-center items-center">
         <CommonTitle title={"ARGENTINA BANKS"} />
 
@@ -45,7 +44,7 @@ const Argentina = () => {
             className="h-[420px] max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B] mb-10 md:mb-0"
           >
             <img className="  px-7 pb-7" src={card.Image} alt="" />
-            <div className="px-7">
+            <div className="px-7 ">
               <p className="text-gray-400 font-semibold">{card.title}</p>
               <p className="text-[#166E3B] font-semibold mt-2 flex items-center">
                 <AiFillDollarCircle className="text-xl mr-1" /> ${card.price}{" "}
@@ -54,8 +53,9 @@ const Argentina = () => {
             </div>
             <div className="text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
               <span className=" ms-4  flex items-center">
-                <IoCube className="text-base  mr-1" /> {card.availableInStock}
+                <IoCube className="text-base  mr-1 " /> {card.availableInStock}
               </span>
+              
               <button
                 onClick={() => openModal(card)}
                 className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1"
@@ -80,29 +80,27 @@ const Argentina = () => {
             {/* price */}
             <div className="px-8 pt-6 text-gray-300 bg-gradient-to-r from-[#1E2836] to-[#10192B]  pb-8">
               <p className=" font-semibold text-lg ">
-              BBVA Argentina + Card Activated | FA
+                BBVA Argentina + Card Activated | FA
               </p>
               <p className="text-[#166E3B] font-semibold mt-2 flex items-center text-lg">
-                  <AiFillDollarCircle className="text-xl mr-1" /> $564.99
-                  USD
-                </p>
-
+                <AiFillDollarCircle className="text-xl mr-1" /> $564.99 USD
+              </p>
             </div>
           </div>
 
           {/* purchase */}
           <div className=" text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
-              <span className=" ms-4  flex gap-x-1 items-center">
-                <IoCube className="text-base  mr-1" /> 1
-              </span>
-              <button
-                // onClick={() => openModal(card)}
-                className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1"
-              >
-                <span>Purchase</span>
-                <FaAngleRight className="text-xl ml-1" />
-              </button>
-            </div>
+            <span className=" ms-4  flex gap-x-1 items-center">
+              <IoCube className="text-base  mr-1" /> 1
+            </span>
+            <button
+              // onClick={() => openModal(card)}
+              className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1"
+            >
+              <span>Purchase</span>
+              <FaAngleRight className="text-xl ml-1" />
+            </button>
+          </div>
         </div>
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal}>

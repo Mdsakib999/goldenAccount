@@ -15,6 +15,7 @@ import UkOpen from './HomeComponents/UkOpen';
 import Manual from './HomeComponents/Manual';
 import Footer from './Footer';
 import Argentina from './HomeComponents/Argentina';
+import HomeProfile from '../../utilsComponents/HomeProfile';
 
 const Home = () => {
     useEffect(() => {
@@ -33,7 +34,9 @@ const Home = () => {
                 <div className=' relative justify-center items-center gap-x-5 flex pb-8 mt-6'>
                     <input className='bg-slate-700 py-1 pl-10 rounded-md' placeholder='Search for a product' type="text" />
 
-                    <p className=' flex px-2 py-1 rounded-lg items-center gap-x-3 bg-slate-700 font-semibold'><BsPersonSquare /> Profile</p>
+                    {/* <p className=' flex px-2 py-1 rounded-lg items-center gap-x-3 bg-slate-700 font-semibold'><BsPersonSquare /> Profile</p> */}
+
+                     <HomeProfile></HomeProfile>
 
                     <IoSearch className='absolute md:left-[42%]' />
                 </div>

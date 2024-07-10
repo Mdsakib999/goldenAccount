@@ -6,7 +6,6 @@ import { FaAngleRight } from "react-icons/fa6";
 import Modal from "../../../utilsComponents/Modal";
 import Dot3 from "./Dot3";
 
-
 const Asia = () => {
   const [cards, setCards] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,13 +27,14 @@ const Asia = () => {
   console.log(cards);
 
   return (
-    <div className="bg-slate-900 md:pt-16 pb-20 relative">
-      <CommonTitle title={"ASIA/LATIN/AFRICA OPEN-UP INSTANT"} />
+    <div className="bg-slate-900 md:pt-16 pb-20">
+      <div className="flex justify-center items-center">
+        <CommonTitle title={"ASIA/LATIN/AFRICA OPEN-UP INSTANT"} />
 
-      {/* 3 dot section */}
-      <div className="absolute md:right-[36%] right-[4%] lg:right-[21%] top-[30px] md:top-[106px]">
+        <div className="mb-4">
           <Dot3></Dot3>
         </div>
+      </div>
 
       <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl ">
         {cards.map((card) => (
@@ -61,7 +61,10 @@ const Asia = () => {
               <span className=" ms-4  flex items-center">
                 <IoCube className="text-base  mr-1" /> {card.availableInStock}
               </span>
-              <button onClick={() => openModal(card)} className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
+              <button
+                onClick={() => openModal(card)}
+                className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1"
+              >
                 <span>Purchase</span>
                 <FaAngleRight className="text-xl ml-1" />
               </button>
@@ -69,12 +72,10 @@ const Asia = () => {
           </div>
         ))}
       </div>
-      <Modal isOpen={isModalOpen} onClose={closeModal} >
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
         <div>
           <h1>hello</h1>
           modal content
-
-
           {/* here write modal content */}
         </div>
       </Modal>

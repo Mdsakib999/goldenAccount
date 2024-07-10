@@ -27,12 +27,14 @@ const Argentina = () => {
 
   return (
     <div className="bg-slate-900  md:pt-16 relative">
-      <CommonTitle title={"ARGENTINA BANKS"} />
 
-      {/* 3 dot section */}
-      <div className="absolute md:right-[36%] right-[8%] lg:right-[31%] top-[30px] md:top-[106px]">
+      <div className="flex justify-center items-center">
+        <CommonTitle title={"ARGENTINA BANKS"} />
+
+        <div className="mb-4">
           <Dot3></Dot3>
         </div>
+      </div>
 
       {/* w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl pb-5 */}
       <div className="w-[90%] mx-auto md:flex justify-center gap-x-10 lg:mt-8 max-w-7xl  pb-12">

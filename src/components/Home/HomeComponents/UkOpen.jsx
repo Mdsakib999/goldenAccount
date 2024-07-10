@@ -28,11 +28,14 @@ const UkOpen = () => {
 
   return (
     <div className="bg-slate-900 md:pt-10 relative">
-      <CommonTitle title={"UK OPEN-UP INSTANT"} />
 
-      <div className="absolute md:right-[36%] right-[8%] lg:right-[30%] top-[30px] md:top-[82px]">
+      <div className="flex justify-center items-center">
+        <CommonTitle title={"UK OPEN-UP INSTANT"} />
+
+        <div className="mb-4">
           <Dot3></Dot3>
         </div>
+      </div>
 
       <div className="w-[90%] mx-auto md:flex justify-center lg:mt-8 max-w-7xl  pb-12">
         {cards.map((card) => (

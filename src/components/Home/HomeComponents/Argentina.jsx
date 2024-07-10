@@ -28,7 +28,6 @@ const Argentina = () => {
 
   return (
     <div className="bg-slate-900  md:pt-16 relative">
-
       <div className="flex justify-center items-center">
         <CommonTitle title={"ARGENTINA BANKS"} />
 
@@ -46,7 +45,7 @@ const Argentina = () => {
             className="h-[420px] max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B] mb-10 md:mb-0"
           >
             <img className="  px-7 pb-7" src={card.Image} alt="" />
-            <div className="px-7">
+            <div className="px-7 ">
               <p className="text-gray-400 font-semibold">{card.title}</p>
               <p className="text-[#166E3B] font-semibold mt-2 flex items-center">
                 <AiFillDollarCircle className="text-xl mr-1" /> ${card.price}{" "}

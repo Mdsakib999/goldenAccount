@@ -6,12 +6,33 @@ import { FaAngleRight } from "react-icons/fa6";
 import Modal from "../../../utilsComponents/Modal";
 import Dot3 from "./Dot3";
 import Tooltip from "../../../utilsComponents/Tooltip";
+import Divider from "../../../utilsComponents/divider";
+import { IoIosArrowDown } from "react-icons/io";
+
 
 const Crypto = () => {
   const [cards, setCards] = useState([]);
+  const [modatData, setModalData] = useState({})
+  const [multimodalOpen, setMultimodalOpen] = useState(false)
+  const [multidata, setMultiData] = useState({})
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const openModal = (data) => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const [downState, setDownState] = useState(false)
+  const openModal = (id) => {
+    setIsModalOpen(true)
+    fetch('discription.json')
+      .then(res => res.json())
+      .then(data => {
+        const filterData = data.find(item => item.cryptoId == id)
+        setModalData(filterData)
+      })
+  };
+  const closeModal = () => {
+    setIsModalOpen(false)
+    setMultiData({})
+    setMultimodalOpen(false)
+    setDownState(false)
+
+  };
 
   // DATA facing
   useEffect(() => {
@@ -25,6 +46,7 @@ const Crypto = () => {
       });
     //   .catch((error) => console.error('Error fetching data:', error));
   }, []);
+  console.log(multidata);
 
   return (
     <>
@@ -65,7 +87,7 @@ const Crypto = () => {
                   </button>
                 </Tooltip>
                 <button
-                  onClick={() => openModal(card)}
+                  onClick={() => openModal(card.id)}
                   className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1"
                 >
                   <span>Purchase</span>
@@ -76,14 +98,136 @@ const Crypto = () => {
           ))}
         </div>
         <Modal isOpen={isModalOpen} onClose={closeModal}>
-          <div>
-            <h1>hello</h1>
-            modal content
-            <p>crypto</p>
-            {/* here write modal content */}
+          <div className="text-slate-300">
+            {
+              multimodalOpen ?
+                <div>
+                  <p className="text-center text-2xl text">{multidata.cryptoTitle}</p>
+                  <hr className="my-8" />
+                  <div className="flex gap-6">
+                    <p>{multidata?.title}</p>
+                    <p>${multidata.price} USD / {multidata.stock} in stock</p>
+
+                  </div>
+                  <div>
+                    {/* header text */}
+                    {
+                      multidata.discription.whayNeed &&
+                      (
+                        <div>
+                          <p className="my-4 text-xl">Why Do You Need This Anyways?</p>
+                          <div >
+                            {
+                              multidata.discription.whayNeed.map(item => <li className="py-2 text-lg">{item}</li>)
+                            }
+                          </div>
+                        </div>
+                      )
+                    }
+                    {
+                      multidata.discription.headerText && <p className="py-4 text-xl">{multidata.discription.headerText}</p>
+                    }
+                    {
+                      multidata.discription.comes_with && <p className="text-xl my-4">{multidata.discription.comes_with}</p>
+                    }
+                    {
+                      multidata.discription.middelText && <p className="text-xl my-4">{multidata.discription.middelText}</p>
+                    }
+                    {
+                      multidata.discription.country && <p className="text-xl my-4"> Country:{multidata.discription.country}</p>
+                    }
+                    {
+                      multidata.discription.afterPurchase && (
+                        <div>
+                          <p className="text-xl my-4">After Purchase what do I do?</p>
+                          {
+                            multidata.discription.afterPurchase.map(item => <li className="text-lg my-4">{item}</li>)
+                          }
+                        </div>
+                      )
+
+
+                    }
+                    {
+                      multidata.discription.YouGet && <p className="text-xl my-4">you will get: {multidata.discription.YouGet}</p>
+                    }
+                    {
+                      multidata.discription.YouNotGet && <p className="text-xl my-4">What you will not get{multidata.discription.YouNotGet}</p>
+                    }
+                    {
+                      multidata.discription.specialNote && <p className="text-xl my-4">Special Note :{multidata.discription.specialNote}</p>
+                    }
+                    {
+                      multidata.discription.doesntComeWith && <p className="text-xl my-4">Doesn’t Come with : {multidata.discription.doesntComeWith}</p>
+                    }
+                    {
+                      multidata.discription.footerText && <p className="text-xl my-4">What you will not get{multidata.discription.footerText}</p>
+                    }
+                    {
+                      multidata.discription.telegramLink && (
+                        <div>
+                          {
+                            multidata.discription.telegramLink.map(item => <div className="text-xl py-4">
+                              <p>🔔Get FREE Access To Our Secret Channel:</p>
+                              <a className="text-white hover:text-blue-300" href={item}>{item}</a>
+
+                            </div>)
+                          }
+                        </div>
+                      )
+
+
+                    }
+                  </div>
+                </div>
+                :
+                <div>
+                  {
+                    modatData?.cryptoData?.length > 1 && (
+                      <div>
+                        <p className="text-2xl text-center py-4 pb-4 ">{modatData?.cryptoTitle}</p>
+                        <Divider text={'ORDER'} />
+                        <div onClick={() => setDownState(!downState)} className="border flex justify-between items-center p-2 text-lg border-stone-400 mt-8 text cursor-pointer  rounded-md">
+                          <p >Choose one of {modatData?.cryptoData?.length} options</p>
+                          <IoIosArrowDown />
+                        </div>
+                        {
+                          !downState && (
+                            <div className="mt-2">
+                              <button className="w-full bg-blue-900 py-2 rounded-md">Please select one Opotion above</button>
+                            </div>
+                          )
+                        }
+                        <div className=" mt-2">
+                          {
+                            downState && (
+                              <div className=" bg-[#11192C] p-4 rounded-md space-y-3">
+                                {
+                                  modatData.cryptoData.map(item => <div onClick={() => {
+                                    setMultiData({ ...item, cryptoTitle: modatData.cryptoTitle })
+                                    setMultimodalOpen(true)
+
+                                  }} className=" cursor-pointer flex justify-between gap-2">
+                                    <p className="">{item.title}</p>
+                                    <span className={`flex h-[30px]  px-3 items-center justify-center border text-sm py-0 rounded-lg ${item.stock > 0 ? "text-green-600  border-green-600" : 'text-slate-500'}`}> <AiFillDollarCircle />{item.price}USD</span>
+                                  </div>)
+                                }
+                              </div>
+                            )
+                          }
+                        </div>
+
+                      </div>
+
+                    )
+                  }
+                </div>
+            }
           </div>
-        </Modal>
-      </div>
+
+
+        </Modal >
+      </div >
     </>
   );
 };

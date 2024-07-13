@@ -6,7 +6,7 @@ const Loader = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setMessage('Waiting for subscribe...');
-        }, 2500);
+        }, 2000);
 
         return () => clearTimeout(timer);
     }, []);

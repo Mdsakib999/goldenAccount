@@ -338,23 +338,7 @@ const Crypto = () => {
                           <Divider text={'ORDER'} />
 
                           <div className=" mt-2">
-                            {/* {
-                              downState && (
-                                <div className=" bg-[#11192C] p-4 rounded-md space-y-3">
-                                  {
-                                    modatData.cryptoData.map(item => <div onClick={() => {
-                                      setMultiData({ ...item, cryptoTitle: modatData.cryptoTitle })
-                                      setMultimodalOpen(true)
-                                      setDownState(false)
 
-                                    }} className=" cursor-pointer flex justify-between gap-2">
-                                      <p className="">{item.title}</p>
-                                      <span className={`flex h-[30px]  px-3 items-center justify-center border text-sm py-0 rounded-lg ${item.stock > 0 ? "text-green-600  border-green-600" : 'text-slate-500'}`}> <AiFillDollarCircle />{item.price}USD</span>
-                                    </div>)
-                                  }
-                                </div>
-                              )
-                            } */}
 
 
                             <div>
@@ -366,7 +350,7 @@ const Crypto = () => {
                                   </div>
                                 )
                               }
-                              <button className={` bg-blue-600 ${modatData?.cryptoData?.stock <= 0 ? "cursor-not-allowed bg-blue-900 " : ""}  hover:bg-blue-500 w-full mt-4 py-2 rounded-md font-semibold`}>Check out for {quantity > 1 ? quantity * modatData?.cryptoData?.price : modatData?.cryptoData?.price} </button>
+                              <button className={` to-blue-600 ${modatData?.cryptoData?.stock <= 0 ? "cursor-not-allowed bg-blue-900 " : ""}  hover:bg-blue-500 w-full mt-4 py-2 rounded-md font-semibold`}>Check out for {quantity > 1 ? quantity * modatData?.cryptoData?.price : modatData?.cryptoData?.price} </button>
                             </div>
 
 

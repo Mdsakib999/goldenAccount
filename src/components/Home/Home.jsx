@@ -42,6 +42,7 @@ const Home = () => {
                 </div>
 
             </div>
+            
             <Business />
 
             <Crypto></Crypto>

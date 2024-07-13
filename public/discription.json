@@ -2,22 +2,20 @@
     {
         "cryptoId": "1",
         "cryptoTitle": "Venmo Ultra | Aged 2022 + BTC Enable + Physical Card Activated + ID Verified | FA",
-        "cryptoData": [
-            {
-                "price": 519.99,
-                "stock": 0,
-                "title": "Venmo Ultra | Aged 2022 + BTC Enable + Physical Card Activated + ID Verified | FA",
-                "discription": {
-                    "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
-                    "comes_with": "✅Mail Access ✅Documents that was used ✅Account Login ✅ Number Access",
-                    "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
-                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
-                    "telegramLink": [
-                        "https://t.me/Pureden_Bot"
-                    ]
-                }
+        "cryptoData": {
+            "price": 519.99,
+            "stock": 0,
+            "title": "Venmo Ultra | Aged 2022 + BTC Enable + Physical Card Activated + ID Verified | FA",
+            "discription": {
+                "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                "comes_with": "✅Mail Access ✅Documents that was used ✅Account Login ✅ Number Access",
+                "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
             }
-        ]
+        }
     },
     {
         "cryptoId": "2",
@@ -211,148 +209,134 @@
     {
         "cryptoId": "5",
         "cryptoTitle": "Bitsa EU | Crypto To Card | FA",
-        "cryptoData": [
-            {
-                "price": 519.99,
-                "stock": 1,
-                "title": "Venmo Ultra | Aged 2022 + BTC Enable + Physical Card Activated + ID Verified | FA",
-                "discription": {
-                    "whayNeed": [
-                        "Up to 4 Virtual Cards",
-                        "Ability to Change Name of Those Virtual Cards",
-                        "Top Up Virtual Cards With: IBAN, Crypto, Card",
-                        "Send Funds Via IBAN",
-                        "Google Pay/ Apple Pay",
-                        "Buy/Sell Crypto"
-                    ],
-                    "middelText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
-                    "comes_with": " ✅Mail Access ✅Documents that was used ✅Account Login ✅ Number Access",
-                    "doesntComeWith": " ❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
-                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
-                    "telegramLink": [
-                        "https://t.me/Pureden_Bot"
-                    ]
-                }
+        "cryptoData": {
+            "price": 519.99,
+            "stock": 1,
+            "title": "Venmo Ultra | Aged 2022 + BTC Enable + Physical Card Activated + ID Verified | FA",
+            "discription": {
+                "whayNeed": [
+                    "Up to 4 Virtual Cards",
+                    "Ability to Change Name of Those Virtual Cards",
+                    "Top Up Virtual Cards With: IBAN, Crypto, Card",
+                    "Send Funds Via IBAN",
+                    "Google Pay/ Apple Pay",
+                    "Buy/Sell Crypto"
+                ],
+                "middelText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                "comes_with": " ✅Mail Access ✅Documents that was used ✅Account Login ✅ Number Access",
+                "doesntComeWith": " ❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
             }
-        ]
+        }
     },
     {
         "cryptoId": "6",
         "cryptoTitle": "Bitsa EU | Crypto To Card | FA",
-        "cryptoData": [
-            {
-                "price": 419.99,
-                "stock": 0,
-                "title": "Venmo Ultra | Aged 2022 + BTC Enable + Physical Card Activated + ID Verified | FA",
-                "discription": {
-                    "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
-                    "comes_with": " ✅Mail Access ✅Documents that was used ✅Account Login ✅ Number Access",
-                    "doesntComeWith": " ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
-                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
-                    "telegramLink": [
-                        "https://t.me/Pureden_Bot"
-                    ]
-                }
+        "cryptoData": {
+            "price": 419.99,
+            "stock": 0,
+            "title": "Venmo Ultra | Aged 2022 + BTC Enable + Physical Card Activated + ID Verified | FA",
+            "discription": {
+                "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                "comes_with": " ✅Mail Access ✅Documents that was used ✅Account Login ✅ Number Access",
+                "doesntComeWith": " ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
             }
-        ]
+        }
     },
     {
         "cryptoId": "7",
         "cryptoTitle": "PST.NET Verified | 1,000 VCC | FA",
-        "cryptoData": [
-            {
-                "price": 199.99,
-                "stock": 1,
-                "title": "PST.NET Verified | 1,000 VCC | FA",
-                "discription": {
-                    "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS",
-                    "comes_with": " ✅Mail Access ✅ID that was Used ✅Account Login ✅ID/Physical Documents or Photos 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
-                    "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
-                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
-                    "telegramLink": [
-                        "https://t.me/Pureden_Bot"
-                    ]
-                }
+        "cryptoData": {
+            "price": 199.99,
+            "stock": 1,
+            "title": "PST.NET Verified | 1,000 VCC | FA",
+            "discription": {
+                "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS",
+                "comes_with": " ✅Mail Access ✅ID that was Used ✅Account Login ✅ID/Physical Documents or Photos 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
             }
-        ]
+        }
     },
     {
         "cryptoId": "8",
         "cryptoTitle": "Crypto.com USA + VCC | FA | Verified",
-        "cryptoData": [
-            {
-                "price": 199.99,
-                "stock": 1,
-                "title": "Crypto.com USA + VCC | FA | Verified",
-                "discription": {
-                    "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS",
-                    "comes_with": " ✅Mail Access ✅ID that was Used ✅Bank Account Login ✅ID/Physical Documents or Photos 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
-                    "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
-                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
-                    "telegramLink": [
-                        "https://t.me/Pureden_Bot"
-                    ]
-                }
+        "cryptoData": {
+            "price": 199.99,
+            "stock": 1,
+            "title": "Crypto.com USA + VCC | FA | Verified",
+            "discription": {
+                "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS",
+                "comes_with": " ✅Mail Access ✅ID that was Used ✅Bank Account Login ✅ID/Physical Documents or Photos 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
             }
-        ]
+        }
     },
     {
         "cryptoId": "9",
         "cryptoTitle": "[MOONPAY ALTERNATIVE] Mercuryo.io | CC TO BTC | FA",
-        "cryptoData": [
-            {
-                "price": 179.99,
-                "stock": 1,
-                "title": "[MOONPAY ALTERNATIVE] Mercuryo.io | CC TO BTC | FA",
-                "discription": {
-                    "comes_with": " ✅Mail Access ✅ID that was Used ✅Bank Account Login ✅ID/Physical Documents or Photos 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
-                    "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
-                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
-                    "telegramLink": [
-                        "https://t.me/Pureden_Bot"
-                    ]
-                }
+        "cryptoData": {
+            "price": 179.99,
+            "stock": 1,
+            "title": "[MOONPAY ALTERNATIVE] Mercuryo.io | CC TO BTC | FA",
+            "discription": {
+                "comes_with": " ✅Mail Access ✅ID that was Used ✅Bank Account Login ✅ID/Physical Documents or Photos 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
             }
-        ]
+        }
     },
     {
         "cryptoId": "10",
         "cryptoTitle": "Coinbase + PayPal EU | Buy/Sell Enabled | Same Name + Transactions | FA | 48 Hours Warranty",
-        "cryptoData": [
-            {
-                "price": 659.99,
-                "stock": 0,
-                "title": "Coinbase + PayPal EU | Buy/Sell Enabled | Same Name + Transactions | FA | 48 Hours Warranty",
-                "discription": {
-                    "headerText": "Transactions Made on Purpose, Slightly Aged to Stabilize.",
-                    "comes_with": " ✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
-                    "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
-                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
-                    "telegramLink": [
-                        "https://t.me/Pureden_Bot"
-                    ]
-                }
+        "cryptoData": {
+            "price": 659.99,
+            "stock": 0,
+            "title": "Coinbase + PayPal EU | Buy/Sell Enabled | Same Name + Transactions | FA | 48 Hours Warranty",
+            "discription": {
+                "headerText": "Transactions Made on Purpose, Slightly Aged to Stabilize.",
+                "comes_with": " ✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
             }
-        ]
+        }
     },
     {
         "cryptoId": "11",
         "cryptoTitle": "[MOONPAY ALTERNATIVE] Paybis | CC TO BTC | FA",
-        "cryptoData": [
-            {
-                "price": 179.99,
-                "stock": 3,
-                "title": "[MOONPAY ALTERNATIVE] Paybis | CC TO BTC | FA",
-                "discription": {
-                    "comes_with": "✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
-                    "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
-                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
-                    "telegramLink": [
-                        "https://t.me/Pureden_Bot"
-                    ]
-                }
+        "cryptoData": {
+            "price": 179.99,
+            "stock": 3,
+            "title": "[MOONPAY ALTERNATIVE] Paybis | CC TO BTC | FA",
+            "discription": {
+                "comes_with": "✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
             }
-        ]
+        }
     },
     {
         "cryptoId": "11",
@@ -430,86 +414,78 @@
     {
         "cryptoId": "13",
         "cryptoTitle": "Bit2Me EU Unlimited VCC + Buy Crypto With CC | FA",
-        "cryptoData": [
-            {
-                "price": 389,
-                "stock": 1,
-                "title": "Bit2Me EU Unlimited VCC + Buy Crypto With CC | FA",
-                "discription": {
-                    "Bit2Me": [
-                        "Unlimited FREE VCC (By Replacing Previous VCC)",
-                        "Buy Crypto with CC, Bank Transfer, Apple/GooglePay",
-                        "Virtual Card (Load with Crypto, Link Card To Google/Apple Pay)",
-                        "Withdraw Funds to bank Or Crypto Addres"
-                    ],
-                    "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS",
-                    "comes_with": "✅Mail Access ✅ID that was Used ✅Account Login ✅ID/Physical Documents or Photos 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
-                    "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
-                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
-                    "telegramLink": [
-                        "https://t.me/Pureden_Bot"
-                    ]
-                }
+        "cryptoData": {
+            "price": 389,
+            "stock": 1,
+            "title": "Bit2Me EU Unlimited VCC + Buy Crypto With CC | FA",
+            "discription": {
+                "Bit2Me": [
+                    "Unlimited FREE VCC (By Replacing Previous VCC)",
+                    "Buy Crypto with CC, Bank Transfer, Apple/GooglePay",
+                    "Virtual Card (Load with Crypto, Link Card To Google/Apple Pay)",
+                    "Withdraw Funds to bank Or Crypto Addres"
+                ],
+                "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS",
+                "comes_with": "✅Mail Access ✅ID that was Used ✅Account Login ✅ID/Physical Documents or Photos 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
             }
-        ]
+        }
     },
     {
         "cryptoId": "14",
         "cryptoTitle": "[MOONPAY ALTERNATIVE] AlchemyPay | CC TO BTC | FA",
-        "cryptoData": [
-            {
-                "price": 199.99,
-                "stock": 1,
-                "title": "[MOONPAY ALTERNATIVE] AlchemyPay | CC TO BTC | FA",
-                "discription": {
-                    "comes_with": " ✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
-                    "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
-                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
-                    "telegramLink": [
-                        "https://t.me/Pureden_Bot"
-                    ]
-                }
+        "cryptoData": {
+            "price": 199.99,
+            "stock": 1,
+            "title": "[MOONPAY ALTERNATIVE] AlchemyPay | CC TO BTC | FA",
+            "discription": {
+                "comes_with": " ✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
             }
-        ]
+        }
     },
     {
         "cryptoId": "15",
         "cryptoTitle": "Brighty.App EU Crypto IBAN App | FA",
-        "cryptoData": [
-            {
-                "price": 389,
-                "stock": 1,
-                "title": "Brighty.App EU Crypto IBAN App | FA",
-                "discription": {
-                    "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
-                    "comes_with": " ✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
-                    "doesntComeWith": "❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
-                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
-                    "telegramLink": [
-                        "https://t.me/Pureden_Bot"
-                    ]
-                }
+        "cryptoData": {
+            "price": 389,
+            "stock": 1,
+            "title": "Brighty.App EU Crypto IBAN App | FA",
+            "discription": {
+                "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                "comes_with": " ✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
             }
-        ]
+        }
     },
     {
         "cryptoId": "16",
         "cryptoTitle": "[BINANCE ALTERNATIVE] Kucoin EU + VCC + FR IBAN | FA",
-        "cryptoData": [
-            {
-                "price": 239.99,
-                "stock": 1,
-                "title": "[BINANCE ALTERNATIVE] Kucoin EU + VCC + FR IBAN | FA",
-                "discription": {
-                    "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS",
-                    "comes_with": "  ✅Mail Access ✅ID that was Used ✅Account Login ✅ID/Physical Documents or Photos 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
-                    "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
-                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
-                    "telegramLink": [
-                        "https://t.me/Pureden_Bot"
-                    ]
-                }
+        "cryptoData": {
+            "price": 239.99,
+            "stock": 1,
+            "title": "[BINANCE ALTERNATIVE] Kucoin EU + VCC + FR IBAN | FA",
+            "discription": {
+                "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS",
+                "comes_with": "  ✅Mail Access ✅ID that was Used ✅Account Login ✅ID/Physical Documents or Photos 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
             }
-        ]
+        }
     }
 ]

@@ -77,6 +77,7 @@ const Crypto = () => {
                   USD
                 </p>
               </div>
+
               <div className=" text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
                 {/* <Tooltip availableInStock={card.availableInStock} message={`There's currently ${card.availableInStock} item left in stock `}> */}
 
@@ -84,9 +85,8 @@ const Crypto = () => {
                   availableInStock={card.availableInStock}
                   message={
                     card.availableInStock === 0
-                      ? "No more items left in stock, check back later"
-                      : `There's currently ${card.availableInStock} item${
-                          card.availableInStock} left in stock`
+                      ? "No more items left in stock, check later"
+                      : `There's currently ${card.availableInStock} items left in stock`
                   }
                 >
                   <button
@@ -104,7 +104,9 @@ const Crypto = () => {
                   onClick={() => openModal(card.id)}
                   className={`flex items-center justify-between ps-3 pe-4 py-1 ${card.availableInStock == 0 ? "hover:bg-gradient-to-r from-[#33393a] to-[#615f64]" : "hover:bg-gradient-to-r from-[#473596] to-[#964FE6]"}`}
                 >
-                  <span>Purchase</span>
+                  <span>
+                  {card.availableInStock === 0 ? "Out of stock" : "Purchase"}
+                </span>
                   <FaAngleRight className="text-xl ml-1" />
                 </button>
               </div>

@@ -204,7 +204,7 @@
         "title": " Wise Canada E-Transfer Enabled | No Docs | FA",
         "price": 349.99,
         "category": "canada",
-        "availableInStock": 1,
+        "availableInStock": 0,
         "Image": "https://imagedelivery.net/8KF1g3-Pi-ph225F906vPQ/48439193-1274-4fab-6653-0c942dff2800/public "
     },
     {
@@ -236,7 +236,7 @@
         "title": "Bitmama With Unlimited VCC | FA",
         "price": 139.99,
         "category": "asia",
-        "availableInStock": 1,
+        "availableInStock": 0,
         "Image": "https://imagedelivery.net/8KF1g3-Pi-ph225F906vPQ/efa4720c-b630-4ddf-8761-b56b50f26600/public"
     },
     {

@@ -70,7 +70,7 @@ const Manual = () => {
                 onClick={() => openModal(card)}
                 className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1"
               >
-                <span>Purchase</span>
+                <span>More Info</span>
                 <FaAngleRight className="text-xl ml-1" />
               </button>
             </div>
@@ -116,10 +116,10 @@ const Manual = () => {
           <div className=" text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
             <span className=" ms-4  flex items-center w-[50%] "></span>
             <button
-              onClick={() => openModal()}
+              // onClick={() => openModal()}
               className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-2"
             >
-              <span>Purchase</span>
+              <span>More Info</span>
               <FaAngleRight className="text-xl ml-1" />
             </button>
           </div>

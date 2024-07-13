@@ -59,17 +59,36 @@ const UsaOpen = () => {
 
             {/* purchase */}
             <div className=" text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
-              <Tooltip availableInStock={card.availableInStock} message={`There's currently ${card.availableInStock} item left in stock `}>
-                <button className={`ms-4 flex items-center ${!card.availableInStock == 0 ? "hover:text-[#6366F1]" : 'hover:text-red-700'}`}>
-                  <IoCube className="text-base mr-1" />
-                  {card.availableInStock}
+
+                <Tooltip
+                  availableInStock={card.availableInStock}
+                  message={
+                    card.availableInStock === 0
+                      ? "No more items left in stock, check later"
+                      : `There's currently ${card.availableInStock} items left in stock`
+                  }
+                >
+                  <button
+                    className={`ms-4 flex items-center ${
+                      !card.availableInStock == 0
+                        ? "hover:text-[#6366F1]"
+                        : "hover:text-red-700"
+                    }`}
+                  >
+                    <IoCube className="text-base mr-1" />
+                    {card.availableInStock}
+                  </button>
+                </Tooltip>
+                <button
+                  onClick={() => openModal(card.id)}
+                  className={`flex items-center justify-between ps-3 pe-4 py-1 ${card.availableInStock == 0 ? "hover:bg-gradient-to-r from-[#33393a] to-[#615f64]" : "hover:bg-gradient-to-r from-[#473596] to-[#964FE6]"}`}
+                >
+                  <span>
+                  {card.availableInStock === 0 ? "Out of stock" : "Purchase"}
+                </span>
+                  <FaAngleRight className="text-xl ml-1" />
                 </button>
-              </Tooltip>
-              <button onClick={() => openModal(card)} className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
-                <span>Purchase</span>
-                <FaAngleRight className="text-xl ml-1" />
-              </button>
-            </div>
+              </div>
           </div>
         ))}
       </div>

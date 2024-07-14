@@ -138,6 +138,7 @@ const Manual = () => {
       <Modal isOpen={isModalOpen} onClose={closeModal} >
         <div className="relative p-3 text-gray-300 ">
           {typeof modalContent === "string" ? (
+            // this is static modal
             <div>
               <p className="text-center mb-3 text-xl">
                 Information On Manual Delivery:

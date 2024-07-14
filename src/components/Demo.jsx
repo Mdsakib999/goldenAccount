@@ -1,50 +1,144 @@
-import React from 'react';
-import { BsPersonSquare } from 'react-icons/bs';
-import { AiOutlineProduct } from "react-icons/ai";
-import { FaClipboardCheck } from "react-icons/fa";
-import { TbShoppingBagPlus } from "react-icons/tb";
+import React, { useEffect, useState } from "react";
+import CommonTitle from "../../../utilsComponents/CommonTitle";
+import { AiFillDollarCircle } from "react-icons/ai";
+import { IoCube } from "react-icons/io5";
+import { FaAngleRight } from "react-icons/fa6";
+import Modal from "../../../utilsComponents/Modal";
+import { FaCircleInfo } from "react-icons/fa6";
+import { BsInfoLg } from "react-icons/bs";
+import Dot3 from "./Dot3";
+import Tooltip from "../../../utilsComponents/Tooltip";
 
-const Demo = () => {
-    return (
-        <div>
-            <div className="relative group  bg-slate-600 rounded-lg cursor-pointer">
-                  <button
-                    className=" "
-                    aria-haspopup="true"
-                  >
-                    <span className=' flex px-3 py-1 rounded-lg items-center gap-x-3 bg-slate-700 font-semibold'><BsPersonSquare /> Profile</span>
-                  </button>
-                  <div class="absolute top-0 -left-2 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[260px] transform ">
-                    <div class="relative top-6 bg-[#2b3646ec] rounded-xl shadow-xl w-full ">
-                      <div class="w-10 h-10 bg-[#2b3646] transform rotate-45 absolute top-0 z-0 -translate-x-4 transition-transform group-hover:translate-x-3 duration-300 ease-in-out rounded-sm "></div>
-                      <div class="relative z-10 ">
-                        
-                        <ul class=" text-[15px] ">
-                          
-                          {/* bg-transparent bg-clip-text text-transparent bg-gradient-to-br from-indigo-400 to-pink-700 via-blue-500  , hover:from-blue-600 hover:to-indigo-600 hover:via-pink-400*/}
-                            <p
-                              class=" font-semibold  flex items-center text-gray-300 gap-x-5  px-5 py-4 hover:bg-slate-900 hover:rounded-t-lg  "
-                            >
-                              <AiOutlineProduct className='text-2xl'/> Our Products
-                            </p>
-                            <p
-                              class=" font-semibold  flex items-center text-gray-300 gap-x-5  px-5 py-4  hover:bg-slate-900 "
-                            >
-                              <FaClipboardCheck className='text-2xl'/> My Orders
-                            </p>
-                            <p
-                              class=" font-semibold  flex items-center text-gray-300 gap-x-5  px-5 py-4  hover:bg-slate-800 hover:rounded-b-lg"
-                            >
-                              <TbShoppingBagPlus className='text-2xl'/> Create a Shop
-                            </p>
-                          
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+const Manual = () => {
+  const [cards, setCards] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = (data) => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+  useEffect(() => {
+    fetch("cryptoData.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const filteredData = data.filter(
+          (product) => product.category === "manual"
+        );
+        setCards(filteredData);
+      });
+    //   .catch((error) => console.error('Error fetching data:', error));
+  }, []);
+
+  console.log(cards);
+
+  return (
+    <div className="bg-slate-900 md:pt-12 relative">
+      <div className="flex justify-center items-center">
+        <CommonTitle title={"MANUAL DELIVERY ITEMS"} />
+
+        <div className="mb-4">
+          <Dot3></Dot3>
         </div>
-    );
+      </div>
+
+      <div className="w-[90%] mx-auto md:flex justify-center gap-x-10 lg:mt-8 md:max-w-7xl  pb-12 ">
+        {cards.map((card) => (
+
+          // this is div-1
+          <div
+            key={card.id}
+            data-aos="zoom-in-down"
+            className=" h-[200px] md:max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]  mb-10 md:mb-0"
+          >
+            <div className=" flex items-center pt-6">
+              <img className=" px-3 w-[45%] " src={card.Image} alt="" />
+
+              {/* price div added*/}
+              <div className="px-3 ">
+                <p className="text-gray-300 font-semibold ">{card.title}</p>
+                <p className="text-[#166E3B] font-semibold mt-2 flex items-center">
+                  <AiFillDollarCircle className="text-xl mr-1" /> ${card.price}{" "}
+                  USD
+                </p>
+              </div>
+            </div>
+
+            {/* purchase */}
+            <div className=" text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
+              <Tooltip availableInStock={card.availableInStock} message={`There's currently ${card.availableInStock} item left in stock `}>
+                <button className={`ms-4 flex items-center ${!card.availableInStock == 0 ? "hover:text-[#6366F1]" : 'hover:text-red-700'}`}>
+                  <IoCube className="text-base mr-1" />
+                  {card.availableInStock}
+                </button>
+              </Tooltip>
+              <button
+                onClick={() => openModal(card)}
+                className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1"
+              >
+                <span>More Info</span>
+                <FaAngleRight className="text-xl ml-1" />
+              </button>
+            </div>
+          </div>
+        ))}
+
+{/* This is div-2 */}
+        <div
+          data-aos="zoom-in-down"
+          className="  md:max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B] "
+        >
+          <div className=" flex items-center bg-gradient-to-r from-[#473596] to-[#964FE6]">
+            <div className="w-[55%]  ">
+              {" "}
+              <BsInfoLg className="text-3xl  ml-[35%]" />{" "}
+            </div>
+
+            {/* price */}
+            <div className="px-8 pt-6 pb-8 mb-8 text-gray-300 bg-gradient-to-r from-[#1E2836] to-[#10192B]">
+              <p className=" font-semibold text-lg ">
+                Information On Manual Delivery:
+              </p>
+              <p className="  mt-3 ">
+                In this Category, Product are Delivered Manually to E-mail.
+              </p>
+
+              <p className="mt-4  mb">Q&A: How Long Till I Receive?</p>
+              <ul class="list-disc list-inside mt-3 mb-4">
+                <li class="">Item 1</li>
+              </ul>
+
+              <p>What Is The Warranty On These?</p>
+              <ul class="list-disc list-inside mt-3">
+                <li class="">Item 1</li>
+              </ul>
+
+              <p className="mt-4 flex items-center gap-x-3 text-blue-600">
+                <FaCircleInfo /> Info
+              </p>
+            </div>
+          </div>
+
+          {/* purchase */}
+          <div className=" text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
+            <span className=" ms-4  flex items-center w-[50%] "></span>
+            <button
+              // onClick={() => openModal()}
+              className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-2"
+            >
+              <span>More Info</span>
+              <FaAngleRight className="text-xl ml-1" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Modal for div-1 */}
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <div>
+          <h1>hello</h1>
+          modal content
+          {/* here write modal content */}
+        </div>
+      </Modal>
+    </div>
+  );
 };
 
-export default Demo;
+export default Manual;

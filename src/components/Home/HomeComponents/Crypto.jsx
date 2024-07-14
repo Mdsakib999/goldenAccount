@@ -262,9 +262,9 @@ const Crypto = () => {
                           <input
                             onChange={(e) => setQuantity(e.target.value)}
                             type="number"
-                            className="bg-transparent ps-3 rounded-e-md focus:border-blue-500 outline-none w-full border-2 py-2"
+                            className="bg-transparent ps-3 rounded-e-md focus:border-stone-400 outline-none w-full border border-stone-500 py-2"
                             defaultValue={multidata.stock}
-                            placeholder="350"
+                            placeholder="1"
                           />
                         </div>
                         <button className="bg-blue-600 hover:bg-blue-500 w-full mt-4 py-2 rounded-md">
@@ -453,11 +453,12 @@ const Crypto = () => {
                                 Quantity
                               </span>
                               <input
+                              required
                                 onChange={(e) => setQuantity(e.target.value)}
                                 type="number"
-                                className="bg-transparent ps-3 rounded-e-md focus:border-blue-500 outline-none w-full border-2 py-2"
+                                className="bg-transparent ps-3 rounded-e-md focus:border-stone-400 outline-none w-full border border-stone-500 py-2"
                                 defaultValue={multidata.stock}
-                                placeholder="350"
+                                placeholder="1"
                               />
                             </div>
                           )}
@@ -466,7 +467,7 @@ const Crypto = () => {
                               modatData?.cryptoData?.stock <= 0
                                 ? "cursor-not-allowed bg-blue-900 "
                                 : ""
-                            }  hover:bg-blue-500 w-full mt-4 py-2 rounded-md font-semibold`}
+                            }  bg-blue-500 hover:bg-blue-600 w-full mt-4 py-2 rounded-md font-semibold`}
                           >
                             Check out for{" "}
                             {quantity > 1

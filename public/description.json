@@ -339,7 +339,7 @@
         }
     },
     {
-        "cryptoId": "11",
+        "cryptoId": "12",
         "cryptoTitle": "Binance EU + Asia",
         "cryptoData": [
             {
@@ -487,5 +487,296 @@
                 ]
             }
         }
+    },
+    {
+        "cryptoId": "35",
+        "cryptoTitle": "Step Bank | Unlimited VCC | $25K Limit |",
+        "cryptoData": {
+            "price": 449.99,
+            "stock": 1,
+            "title": "Step Bank | Unlimited VCC | $25K Limit |",
+            "discription": {
+                "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                "comes_with": " ✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
+            }
+        }
+    },
+    {
+        "cryptoId": "36",
+        "cryptoTitle": "GO2 + Physical Card Activated + Number Access | FA",
+        "cryptoData": {
+            "price": 339.99,
+            "stock": 1,
+            "title": "GO2 + Physical Card Activated + Number Access | FA",
+            "discription": {
+                "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                "comes_with": " ✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
+            }
+        }
+    },
+    {
+        "cryptoId": "37",
+        "cryptoTitle": "Oxygen.us + Physical Card Activated + Transactions/Aged",
+        "cryptoData": {
+            "price": 479.99,
+            "stock": 0,
+            "title": "Oxygen.us + Physical Card Activated + Transactions/Aged",
+            "discription": {
+                "headerText": "This Account is used & Not Freshly made/Handmade.Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS",
+                "comes_with": "✅Mail Access ✅SSN (In Text Format) ✅Oxygen Account Login",
+                "doesntComeWith": "❌Number Access (You can Login Without it) ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
+            }
+        }
+    },
+    {
+        "cryptoId": "38",
+        "cryptoTitle": "[INSTANT] Chime Bank Account + VCC + LDplayer",
+        "cryptoData": {
+            "price": 154.99,
+            "stock": 0,
+            "title": "[INSTANT] Chime Bank Account + VCC + LDplayer",
+            "discription": {
+                "headerText": "Automated Shop! All Items are in Stock, We don't do 'Contact us to receive your product' BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                "comes_with": "✅ Chime's VCC (Debit) ✅Fullz/SSN that was Used ✅Bank Account Login ✅Number Access",
+                "middelText": "Must be logged in with LDPlayer",
+                "doesntComeWith": "❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
+            }
+        }
+    },
+    {
+        "cryptoId": "39",
+        "cryptoTitle": "Porte Multiple VCC | FA",
+        "cryptoData": {
+            "price": 154.99,
+            "stock": 1,
+            "title": "Porte Multiple VCC | FA",
+            "discription": {
+                "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                "comes_with": "✅Mail Access ✅Fullz/SSN that was Used ✅Bank Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
+            }
+        }
+    },
+    {
+        "cryptoId": "40",
+        "cryptoTitle": "Click Purchase To View All Paypal Items",
+        "cryptoData": [
+            {
+                "price": 164.99,
+                "stock": 1,
+                "title": "[INSTANT] USA PayPal Business Verified FA + Bank",
+                "discription": {
+                    "deliveryThese": "✅ Paypal Account ✅SSN Information ✅USA Bank With Access ✅USA Debit Card With Access (Not Physical Card) ✅ Phone confirmed",
+                    "telegramLink": [
+                        "https://t.me/+lLTtw_HV82FiZDFh",
+                        "https://t.me/+kUU4RqUwEsA2MWJl"
+                    ]
+                }
+            },
+            {
+                "price": 74.99,
+                "stock": 0,
+                "title": "[INSTANT] USA PayPal Personal Account FA + Go2 Bank Access",
+                "discription": {
+                    "headerText": "Automated Shop! All Items are in Stock, We don't do 'Contact us to receive your product' BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                    "comes_with": " ✅Mail Access ✅Fullz/SSN that was Used ✅Bank that is linked to Paypal Login ✅PayPal Account 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                    "doesntComeWith": "❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                    "telegramLink": [
+                        "https://t.me/Pureden_Bot"
+                    ]
+                }
+            },
+            {
+                "price": 349.99,
+                "stock": 0,
+                "title": "PayPal Ultra | Restored + DD + Crypto + PayPal VCC + Bank + Number Access",
+                "discription": {
+                    "headerText": "Automated Shop! All Items are in Stock, We don't do 'Contact us to receive your product' BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                    "comes_with": " ✅Mail Access ✅Documents that was used ✅Account Login ✅ Number Access ✅Paypal Mastercard (Virtual) ✅Direct Deposit & Crypto Enable",
+                    "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                    "telegramLink": [
+                        "https://t.me/Pureden_Bot"
+                    ]
+                }
+            },
+            {
+                "price": 149.99,
+                "stock": 0,
+                "title": "Restored PayPal USA Account + Docs + Bank Linked",
+                "discription": {
+                    "headerText": "Automated Shop! All Items are in Stock, We don't do 'Contact us to receive your product' BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                    "comes_with": "✅Mail Access ✅Fullz/SSN that was Used ✅Bank that is linked to Paypal Login ✅PayPal Account",
+                    "doesntComeWith": "❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                    "telegramLink": [
+                        "https://t.me/Pureden_Bot"
+                    ]
+                }
+            },
+            {
+                "price": 229.99,
+                "stock": 0,
+                "title": "Restored PayPal USA Account + Docs + Bank Linked",
+                "discription": {
+                    "headerText": "Automated Shop! All Items are in Stock, We don't do 'Contact us to receive your product' BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                    "comes_with": "✅Mail Access ✅Fullz/SSN that was Used ✅Bank that is linked to Paypal Login ✅PayPal Account ✅Number Access: For This specific Paypal, We Provide Number Access",
+                    "doesntComeWith": "❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                    "telegramLink": [
+                        "https://t.me/Pureden_Bot"
+                    ]
+                }
+            },
+            {
+                "price": 119.99,
+                "stock": 2,
+                "title": "USA PayPal Personal Account With Number Access + Bank Linked",
+                "discription": {
+                    "headerText": "Automated Shop! All Items are in Stock, We don't do 'Contact us to receive your product' BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                    "comes_with": "✅Mail Access ✅Fullz/SSN that was Used ✅Bank that is linked to Paypal Login ✅PayPal Account ✅Number Access: For This specific Paypal, We Provide Number Access",
+                    "doesntComeWith": "❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                    "telegramLink": [
+                        "https://t.me/Pureden_Bot"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "cryptoId": "41",
+        "cryptoTitle": "BMO USA + Zelle | FA",
+        "cryptoData": {
+            "price": 179.99,
+            "stock": 0,
+            "title": "BMO USA + Zelle | FA",
+            "discription": {
+                "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                "comes_with": "✅Mail Access ✅Fullz/SSN that was Used ✅Bank Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
+            }
+        }
+    },
+    {
+        "cryptoId": "42",
+        "cryptoTitle": "Spendwell With VCC | FA",
+        "cryptoData": {
+            "price": 69.99,
+            "stock": 1,
+            "title": "Spendwell With VCC | FA",
+            "discription": {
+                "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                "comes_with": "✅Mail Access ✅Fullz/SSN that was Used ✅Bank Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
+            }
+        }
+    },
+    {
+        "cryptoId": "43",
+        "cryptoTitle": "Bluebird + VCC | FA",
+        "cryptoData": {
+            "price": 59.99,
+            "stock": 1,
+            "title": "Bluebird + VCC | FA",
+            "discription": {
+                "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                "comes_with": "✅Mail Access ✅Fullz/SSN that was Used ✅Bank Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
+            }
+        }
+    },
+    {
+        "cryptoId": "43",
+        "cryptoTitle": "GO2 Bank + VCC | FA",
+        "cryptoData": {
+            "price": 69.99,
+            "stock": 4,
+            "title": "GO2 Bank + VCC | FA",
+            "discription": {
+                "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                "comes_with": "✅Mail Access ✅Fullz/SSN that was Used ✅Bank Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                "doesntComeWith": "❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                "telegramLink": [
+                    "https://t.me/Pureden_Bot"
+                ]
+            }
+        }
+    },
+    {
+        "cryptoId": "45",
+        "cryptoTitle": "Squareup",
+        "cryptoData": [
+            {
+                "price": 79.99,
+                "stock": 0,
+                "title": "[INSTANT] SquareUp USA (Savings) Number Access",
+                "discription": {
+                    "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                    "comes_with": " ✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                    "doesntComeWith": "❌ID/Physical Documents or Photos ❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                    "telegramLink": [
+                        "https://t.me/Pureden_Bot"
+                    ]
+                }
+            },
+            {
+                "price": 579.99,
+                "stock": 1,
+                "title": "Squareup USA Business | LLC + Virtual Terminal | 48 Hours Warranty",
+                "discription": {
+                    "whay$": "579.99?",
+                    "threeWords": "𝟯 𝗪𝗼𝗿𝗱𝘀: 𝗕𝗘𝗦𝗧. 𝗦𝗧𝗥𝗜𝗣𝗘. 𝗔𝗟𝗧𝗘𝗥𝗡𝗔𝗧𝗜𝗩𝗘.",
+                    "extraLi": [
+                        "𝗟𝗼𝘄 𝗦𝘂𝗽𝗽𝗹𝘆, 𝗛𝗶𝗴𝗵 𝗗𝗲𝗺𝗮𝗻𝗱",
+                        "𝗨𝗦𝗔 𝗟𝗟𝗖 𝗖𝗼𝘀𝘁"
+                    ],
+                    "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
+                    "comes_with": " ✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
+                    "doesntComeWith": "❌Funds (This is a handmade account) ❌Cracked/Hacked (This is made Legally) ❌Anything the description doesn’t mention",
+                    "footerText": "⚠️Feel Free to ask us any questions before purchase so there’s no confusion between us. We make sure you are getting everything you asked for, Or at least aware what you are getting 😃",
+                    "telegramLink": [
+                        "https://t.me/Pureden_Bot"
+                    ]
+                }
+            }
+        ]
     }
 ]

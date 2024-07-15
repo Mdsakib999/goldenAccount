@@ -86,13 +86,14 @@ const Manual = () => {
                 onClick={() => openModal(card)}
                 className=" flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1"
               >
-                <span>More Info</span>
+                <span>Purchase</span>
                 <FaAngleRight className="text-xl ml-1" />
               </button>
             </div>
           </div>
         ))}
 
+            {/* This is div-2 */}
         <div
           data-aos="zoom-in-down"
           className="md:max-w-[400px] rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]"

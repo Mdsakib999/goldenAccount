@@ -40,7 +40,7 @@ const Modal = ({ isOpen, onClose, children }) => {
                         <dialog
                             ref={dialogRef}
                             open
-                            className={`bg-[#1E2836] h-auto overflow-y-auto text-white rounded-lg shadow-lg w-11/12 md:w-[40%] p-6 relative transform transition-transform duration-300 ${isOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
+                            className={`bg-[#1E2836] h-auto overflow-y-auto text-white rounded-lg shadow-lg w-11/12 md:w-[40%] max-w-xl p-6 relative transform transition-transform duration-300 ${isOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
                                 }`}
                         >
                             <div>{children}</div>

@@ -7,6 +7,8 @@ import { v4 as uuid } from "uuid";
 import Modal2 from "../../utilsComponents/Modal2";
 import { Button, DialogTitle } from "@headlessui/react";
 import { FaEthereum, FaBitcoin } from "react-icons/fa";
+import { IoSearch, IoStar } from "react-icons/io5";
+import HomeProfile from "../../utilsComponents/HomeProfile";
 
 
 
@@ -41,7 +43,29 @@ const Payment = () => {
     const { title, price } = data
     return (
         <div>
-            <div className="w-[80%] mx-auto flex  max-w-7xl my-16">
+
+            {/* Static part */}
+            <div className=' text-white md:pt-16 '>
+                <img className=' md:w-[25%] md:mx-auto shadow-2xl rounded-lg ' src="https://imagedelivery.net/8KF1g3-Pi-ph225F906vPQ/f6e61577-982b-4c60-c79e-dbcf5937da00/public" alt="" />
+                <p className=' text-2xl font-semibold text-gray-300 text-center mt-5 flex justify-center items-center'>Exploit Wise <span className='flex items-center justify-center text-orange-400 text-2xl gap-1 font-bold'><IoStar className=' ml-3 text-xl'></IoStar> 4.5</span></p>
+                <div className='flex justify-center items-center gap-x-5 pb-8 mt-6'>
+                    <div className='relative '>
+
+                    <input className='bg-slate-700 py-1 pl-10 rounded-md border border-slate-700 focus:border-purple-500 outline-none ' placeholder='Search for a product' type="text" />
+
+                    <IoSearch className='absolute md:left-4 md:top-[9px] left-4 top-2' />
+                    </div>
+
+                    {/* <p className=' flex px-2 py-1 rounded-lg items-center gap-x-3 bg-slate-700 font-semibold'><BsPersonSquare /> Profile</p> */}
+
+                     <HomeProfile></HomeProfile>
+                </div>
+
+            </div>
+
+
+
+            <div className="w-[80%] mx-auto flex  max-w-7xl my-16 ">
                 <div className="bg-gradient-to-b from-[#402B8B] to-[#6A21A7] w-[40%] px-7 rounded-s-lg py-9">
                     <p className=" font-semibold text-[#C5BAD6]">Your order</p>
                     <p className="text-xl font-medium mt-2" >{title}</p>

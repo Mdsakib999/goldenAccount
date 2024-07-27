@@ -7,12 +7,33 @@ import Modal from "../../../utilsComponents/Modal";
 import { BsInfoLg } from "react-icons/bs";
 import Dot3 from "./Dot3";
 import Tooltip from "../../../utilsComponents/Tooltip";
+import Divider from "../../../utilsComponents/divider";
 
 const Argentina = () => {
   const [cards, setCards] = useState([]);
+  const [modatData, setModalData] = useState({});
+  const [quantity, setQuantity] = useState(0);
+  const [multimodalOpen, setMultimodalOpen] = useState(false);
+  const [multidata, setMultiData] = useState({});
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const openModal = (data) => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const [downState, setDownState] = useState(false);
+  const openModal = (d) => {
+    // console.log(id);
+    setIsModalOpen(true);
+    fetch("description.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const filterData = data.find((item) => item.cryptoId == d.id);
+        setModalData(filterData);
+      });
+  };
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setMultiData({});
+    setMultimodalOpen(false);
+    setDownState(false);
+    setQuantity(0);
+  };
 
   useEffect(() => {
     fetch("cryptoData.json")
@@ -109,11 +130,194 @@ const Argentina = () => {
         </div>
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <div>
-          <h1>hello</h1>
-          modal content
-          <p>Argentina Bank</p>
-          {/* here write modal content */}
+        <div className="text-slate-300">
+          {multimodalOpen ? (
+            <></>
+          ) : (
+            <div>
+              {modatData?.cryptoData?.length > 1 ? (
+                <></>
+              ) : (
+                <div>
+                  <p className="text-xl text-center">
+                    {modatData?.cryptoTitle}
+                  </p>
+                  <div className="text-center text-sm flex justify-center">
+                    <span>min. Order:1/</span>
+                    <p>Stock: {modatData?.cryptoData?.stock} /</p>
+                    <p>Price:{modatData?.cryptoData?.price}</p>
+                  </div>
+                  <hr className="bg-slate-600 my-8" />
+                  <div>
+                    {/* header text */}
+                    {
+                      modatData?.cryptoData?.discription?.topUp && (
+                        // <p className="text-xl">{modatData?.cryptoData?.discription?.deliveryThese}</p> //need change todo
+                        modatData?.cryptoData?.discription?.topUp?.map(item => <li className="text-xl py-1">{item}</li>)
+                      )
+                    }
+                    {
+                      modatData?.cryptoData?.discription?.deliveryThese && (
+                        <p className="text-xl">{modatData?.cryptoData?.discription?.deliveryThese}</p> //need change todo
+                      )
+                    }
+                    <p>
+
+                      {
+                        modatData?.cryptoData?.discription?.whay$ && (
+                          <p> What{modatData?.cryptoData?.discription.whay$}</p> //need change todo
+                        )
+                      }
+                    </p>
+                    <p>
+
+                      {
+                        modatData?.cryptoData?.discription?.threeWords && (
+                          <p> three words {modatData?.cryptoData?.discription?.threeWords}</p> //need change todo
+                        )
+                      }
+                    </p>
+                    <p>
+                      {
+                        modatData?.cryptoData?.discription?.threeWords && (
+                          modatData?.cryptoData?.discription?.threeWords.map(item => <p>{item}</p>)
+                        )
+                      }
+                    </p>
+
+                    {modatData?.cryptoData?.discription?.whayNeed && (
+                      <div>
+                        <p className="my-4 text-xl">
+                          Why Do You Need This Anyways?
+                        </p>
+                        <div>
+                          {modatData?.cryptoData?.discription?.whayNeed?.map(
+                            (item) => (
+                              <li className="py-2 text-lg">{item}</li>
+                            )
+                          )}
+                        </div>
+                      </div>
+                    )}
+                    {modatData?.cryptoData?.discription?.headerText && (
+                      <p className="py-4 text-xl">
+                        {modatData?.cryptoData?.discription?.headerText}
+                      </p>
+                    )}
+                    {modatData?.cryptoData?.discription?.comes_with && (
+                      <p className="text-xl my-4">
+                        Comes with: {modatData?.cryptoData?.discription?.comes_with}
+                      </p>
+                    )}
+                    {modatData?.cryptoData?.discription?.middelText && (
+                      <p className="text-xl my-4">
+                        {modatData?.cryptoData?.discription?.middelText}
+                      </p>
+                    )}
+                    {modatData?.cryptoData?.discription?.country && (
+                      <p className="text-xl my-4">
+                        {" "}
+                        Country:{modatData?.cryptoData?.discription?.country}
+                      </p>
+                    )}
+                    {modatData?.cryptoData?.discription?.afterPurchase && (
+                      <div>
+                        <p className="text-xl my-4">
+                          After Purchase what do I do?
+                        </p>
+                        {modatData?.cryptoData?.discription?.afterPurchase.map(
+                          (item) => (
+                            <li className="text-lg my-4">{item}</li>
+                          )
+                        )}
+                      </div>
+                    )}
+                    {modatData?.cryptoData?.discription?.YouGet && (
+                      <p className="text-xl my-4">
+                        you will get:{" "}
+                        {modatData?.cryptoData?.discription?.YouGet}
+                      </p>
+                    )}
+                    {modatData?.cryptoData?.discription?.YouNotGet && (
+                      <p className="text-xl my-4">
+                        What you will not get
+                        {modatData?.cryptoData?.discription?.YouNotGet}
+                      </p>
+                    )}
+                    {modatData?.cryptoData?.discription?.specialNote && (
+                      <p className="text-xl my-4">
+                        Special Note :
+                        {modatData?.cryptoData?.discription?.specialNote}
+                      </p>
+                    )}
+                    {modatData?.cryptoData?.discription?.doesntComeWith && (
+                      <p className="text-xl my-4">
+                        Doesn’t Come with :{" "}
+                        {modatData?.cryptoData?.discription?.doesntComeWith}
+                      </p>
+                    )}
+                    {modatData?.cryptoData?.discription?.footerText && (
+                      <p className="text-xl my-4">
+                        What you will not get
+                        {modatData?.cryptoData?.discription?.footerText}
+                      </p>
+                    )}
+
+                    {/* -- end */}
+                    {modatData?.cryptoData?.discription?.telegramLink && (
+                      <div>
+                        {modatData?.cryptoData?.discription?.telegramLink.map(
+                          (item) => (
+                            <div className="text-xl py-4">
+                              <p>🔔Get FREE Access To Our Secret Channel:</p>
+                              <a
+                                className="text-white hover:text-blue-300"
+                                href={item}
+                              >
+                                {item}
+                              </a>
+                            </div>
+                          )
+                        )}
+                      </div>
+                    )}
+                    <Divider text={"ORDER"} />
+
+                    <div className=" mt-2">
+                      <div>
+                        {modatData?.cryptoData?.stock > 0 && (
+                          <div div className="flex items-center">
+                            <span className="border border-stone-500 rounded-s-md py-2 px-4">
+                              Quantity
+                            </span>
+                            <input
+                              required
+                              onChange={(e) => setQuantity(e.target.value)}
+                              type="number"
+                              className="bg-transparent ps-3 rounded-e-md focus:border-stone-400 outline-none w-full border border-stone-500 py-2"
+                              defaultValue={multidata.stock}
+                              placeholder="1"
+                            />
+                          </div>
+                        )}
+                        <button
+                          className={` to-blue-600 ${modatData?.cryptoData?.stock <= 0
+                            ? "cursor-not-allowed bg-blue-900 "
+                            : ""
+                            }  bg-blue-500 hover:bg-blue-600 w-full mt-4 py-2 rounded-md font-semibold`}
+                        >
+                          Check out for {" $"}
+                          {quantity > 1
+                            ? quantity * modatData?.cryptoData?.price
+                            : modatData?.cryptoData?.price}{" "}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </Modal>
     </div>

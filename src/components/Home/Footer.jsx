@@ -14,7 +14,7 @@ const Footer = () => {
             alt=""
           />
 
-          <p className="text-lg font-semibold">GOLDEN ACCOUNTS</p>
+          <p className="text-lg font-semibold">Exploit Wise</p>
         </div>
 
         <div className=" md:flex md:w-[60%] justify-between mt-6 md:mt-0">

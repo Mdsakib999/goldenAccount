@@ -30,7 +30,7 @@ const Home = () => {
         <div>
             <div className='bg-slate-800 text-white md:pt-28 '>
                 <img className=' md:w-[30%] md:mx-auto shadow-xl rounded-lg ' src="https://imagedelivery.net/8KF1g3-Pi-ph225F906vPQ/f6e61577-982b-4c60-c79e-dbcf5937da00/public" alt="" />
-                <p className=' text-3xl font-semibold text-gray-300 text-center mt-8 flex justify-center items-center'>Golden Accounts <span className='flex items-center justify-center text-orange-400 text-2xl gap-1 font-bold'><IoStar className=' ml-3 text-xl'></IoStar> 4.5</span></p>
+                <p className=' text-3xl font-semibold text-gray-300 text-center mt-8 flex justify-center items-center'>Exploit Wise <span className='flex items-center justify-center text-orange-400 text-2xl gap-1 font-bold'><IoStar className=' ml-3 text-xl'></IoStar> 4.5</span></p>
                 <div className='flex justify-center items-center gap-x-5 pb-8 mt-6'>
                     <div className='relative '>
 

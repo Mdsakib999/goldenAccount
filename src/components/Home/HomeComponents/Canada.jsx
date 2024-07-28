@@ -180,7 +180,7 @@ const Canada = () => {
                     {modatData?.cryptoTitle}
                   </p>
                   <div className="text-center text-sm flex justify-center">
-                    <span>min. Order:1/</span>
+                    <span>min Order: 1 / </span>
                     <p>Stock: {modatData?.cryptoData?.stock} /</p>
                     <p>Price:{modatData?.cryptoData?.price}</p>
                   </div>
@@ -338,15 +338,19 @@ const Canada = () => {
                           </div>
                         )}
                         <button
-                          className={` to-blue-600 ${modatData?.cryptoData?.stock <= 0
-                            ? "cursor-not-allowed bg-blue-900 "
-                            : ""
-                            }  bg-blue-500 hover:bg-blue-600 w-full mt-4 py-2 rounded-md font-semibold`}
+                          className={`to-blue-600 ${
+                            modatData?.cryptoData?.stock <= 0
+                              ? "cursor-not-allowed bg-blue-900"
+                              : ""
+                          } bg-blue-600 hover:bg-blue-800 w-full mt-4 py-2 rounded-md font-semibold`}
                         >
-                          Check out for {" $"}
-                          {quantity > 1
-                            ? quantity * modatData?.cryptoData?.price
-                            : modatData?.cryptoData?.price}{" "}
+                          {modatData?.cryptoData?.stock <= 0
+                            ? "Out Of Stock"
+                            : `Check out for $${
+                                quantity > 1
+                                  ? quantity * modatData?.cryptoData?.price
+                                  : modatData?.cryptoData?.price
+                              }`}
                         </button>
                       </div>
                     </div>

@@ -22,7 +22,7 @@
         "cryptoTitle": "Instant Revolut EU | FA (Personal)",
         "cryptoData": {
             "price": 2599.99,
-            "stock": 0,
+            "stock": 1,
             "title": "Instant Revolut EU | FA (Personal)",
             "discription": {
                 "whayNeed": [
@@ -52,7 +52,7 @@
         "cryptoTitle": "[INSTANT] Click Purchase To View All Cashapp Items",
         "cryptoData": {
             "price": 519.99,
-            "stock": 0,
+            "stock": 2,
             "title": "[INSTANT] Click Purchase To View All Cashapp Items",
             "discription": {
                 "headerText": "Advantage of LDplayer Backup: LDplayer Backup is simply original save files that this account was created on. This way there's no 'Cannot sign in this Device' Error & Stability is much better than signing in a new Device.",
@@ -70,7 +70,7 @@
         "cryptoTitle": "Moonpay High Limit",
         "cryptoData": {
             "price": 199.99,
-            "stock": 1,
+            "stock": 5,
             "title": "Moonpay High Limit",
             "discription": {
                 "comes_with": " ✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
@@ -87,7 +87,7 @@
         "cryptoTitle": "Bitsa EU | Crypto To Card | FA",
         "cryptoData": {
             "price": 519.99,
-            "stock": 1,
+            "stock": 2,
             "title": "Venmo Ultra | Aged 2022 + BTC Enable + Physical Card Activated + ID Verified | FA",
             "discription": {
                 "whayNeed": [
@@ -110,7 +110,7 @@
     },
     {
         "cryptoId": "6",
-        "cryptoTitle": "Bitsa EU | Crypto To Card | FA",
+        "cryptoTitle": "Cogni USA Unlimited VCC + Crypto Enabled | FA",
         "cryptoData": {
             "price": 419.99,
             "stock": 0,
@@ -131,7 +131,7 @@
         "cryptoTitle": "PST.NET Verified | 1,000 VCC | FA",
         "cryptoData": {
             "price": 199.99,
-            "stock": 1,
+            "stock": 2,
             "title": "PST.NET Verified | 1,000 VCC | FA",
             "discription": {
                 "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS",
@@ -202,7 +202,7 @@
         "cryptoTitle": "[MOONPAY ALTERNATIVE] Paybis | CC TO BTC | FA",
         "cryptoData": {
             "price": 179.99,
-            "stock": 3,
+            "stock": 1,
             "title": "[MOONPAY ALTERNATIVE] Paybis | CC TO BTC | FA",
             "discription": {
                 "comes_with": "✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
@@ -219,7 +219,7 @@
         "cryptoTitle": "Binance EU + Asia",
         "cryptoData": {
             "price": 69.99,
-            "stock": 1,
+            "stock": 4,
             "title": "Binance EU + Asia",
             "discription": {
                 "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS",
@@ -261,7 +261,7 @@
         "cryptoTitle": "[MOONPAY ALTERNATIVE] AlchemyPay | CC TO BTC | FA",
         "cryptoData": {
             "price": 199.99,
-            "stock": 1,
+            "stock": 0,
             "title": "[MOONPAY ALTERNATIVE] AlchemyPay | CC TO BTC | FA",
             "discription": {
                 "comes_with": " ✅Mail Access ✅ID/Physical Documents or Photos ✅Account Login 🔘Number Access (Optional, If it’s required by the bank, It will be provided, If not, Then no)",
@@ -278,7 +278,7 @@
         "cryptoTitle": "Brighty.App EU Crypto IBAN App | FA",
         "cryptoData": {
             "price": 389,
-            "stock": 1,
+            "stock": 0,
             "title": "Brighty.App EU Crypto IBAN App | FA",
             "discription": {
                 "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
@@ -368,7 +368,7 @@
         "cryptoTitle": "[INSTANT] Chime Bank Account + VCC + LDplayer",
         "cryptoData": {
             "price": 154.99,
-            "stock": 0,
+            "stock": 2,
             "title": "[INSTANT] Chime Bank Account + VCC + LDplayer",
             "discription": {
                 "headerText": "Automated Shop! All Items are in Stock, We don't do 'Contact us to receive your product' BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
@@ -405,7 +405,7 @@
         "cryptoTitle": "Click Purchase To View All Paypal Items",
         "cryptoData": {
             "price": 74.99,
-            "stock": 1,
+            "stock": 4,
             "title": "Click Purchase To View All Paypal Items",
             "discription": {
                 "deliveryThese": "✅ Paypal Account ✅SSN Information ✅USA Bank With Access ✅USA Debit Card With Access (Not Physical Card) ✅ Phone confirmed",
@@ -439,7 +439,7 @@
         "cryptoTitle": "Spendwell With VCC | FA",
         "cryptoData": {
             "price": 69.99,
-            "stock": 1,
+            "stock": 2,
             "title": "Spendwell With VCC | FA",
             "discription": {
                 "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
@@ -663,7 +663,7 @@
         "cryptoTitle": "Bitmama With Unlimited VCC | FA",
         "cryptoData": {
             "price": 139.99,
-            "stock": 1,
+            "stock": 0,
             "title": "Bitmama With Unlimited VCC | FA",
             "discription": {
                 "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
@@ -699,7 +699,7 @@
         "cryptoTitle": "Paxful Level 3 Verified Full Access | With ID",
         "cryptoData": {
             "price": 94.99,
-            "stock": 0,
+            "stock": 2,
             "title": "Paxful Level 3 Verified Full Access | With ID",
             "discription": {
                 "headerText": "Paxful Level 3 means all Verification Completed.",
@@ -717,7 +717,7 @@
         "cryptoTitle": "CryptoVoucher.io | FA",
         "cryptoData": {
             "price": 89.99,
-            "stock": 0,
+            "stock": 3,
             "title": "CryptoVoucher.io | FA",
             "discription": {
                 "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
@@ -735,7 +735,7 @@
         "cryptoTitle": "CryptoVoucher.io | FA",
         "cryptoData": {
             "price": 89.99,
-            "stock": 0,
+            "stock": 1,
             "title": "CryptoVoucher.io | FA",
             "discription": {
                 "headerText": "Automated Shop! All Items are in Stock, We don’t do “Contact us to receive your product” BS Warranty: 12 Hours | Warranty Abusers will be Banned Permanently from shop!",
@@ -753,7 +753,7 @@
         "cryptoTitle": "Paxful",
         "cryptoData": {
             "price": 84.99,
-            "stock": 0,
+            "stock": 4,
             "title": "Paxful",
             "discription": {
                 "headerText": "Paxful Level 3 means all Verification Completed.",
@@ -809,7 +809,7 @@
         "cryptoTitle": "Belo + Multiple VCC (Crypto Enabled) | FA",
         "cryptoData": {
             "price": 239.99,
-            "stock": 0,
+            "stock": 1,
             "title": "Belo + Multiple VCC (Crypto Enabled) | FA",
             "discription": {
                 "topUp": [

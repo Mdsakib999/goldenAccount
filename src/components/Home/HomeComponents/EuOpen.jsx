@@ -48,7 +48,6 @@ const EuOpen = () => {
 
   return (
     <div className="bg-slate-900 md:pt-16 relative">
-
       <div className="flex justify-center items-center">
         <CommonTitle title={"EU OPEN-UP INSTANT"} />
 
@@ -58,51 +57,59 @@ const EuOpen = () => {
       </div>
 
       <div className="w-[90%] mx-auto gap-10 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl pb-5">
-        {
-          cards.map((card) => (
-            <div data-aos="zoom-in-down" key={card.id} className="h-[420px] max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]">
-              <img className="  px-7 pb-7" src={card.Image} alt="" />
-              <div className="px-7">
-                <p className="text-gray-400 font-semibold">{card.title}</p>
-                <p className="text-[#166E3B] font-semibold mt-2 flex items-center">
-                  <AiFillDollarCircle className="text-xl mr-1" /> ${card.price} USD
-                </p>
-              </div>
-
-              <div className=" text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
-                {/* <Tooltip availableInStock={card.availableInStock} message={`There's currently ${card.availableInStock} item left in stock `}> */}
-
-                <Tooltip
-                  availableInStock={card.availableInStock}
-                  message={
-                    card.availableInStock === 0
-                      ? "No more items left in stock, check later"
-                      : `There's currently ${card.availableInStock} items left in stock`
-                  }
-                >
-                  <button
-                    className={`ms-4 flex items-center ${!card.availableInStock == 0
-                      ? "hover:text-[#6366F1]"
-                      : "hover:text-red-700"
-                      }`}
-                  >
-                    <IoCube className="text-base mr-1" />
-                    {card.availableInStock}
-                  </button>
-                </Tooltip>
-                <button
-                  onClick={() => openModal(card.id)}
-                  className={`flex items-center justify-between ps-3 pe-4 py-1 ${card.availableInStock == 0 ? "hover:bg-gradient-to-r from-[#33393a] to-[#615f64]" : "hover:bg-gradient-to-r from-[#473596] to-[#964FE6]"}`}
-                >
-                  <span>
-                    {card.availableInStock === 0 ? "Out of stock" : "Purchase"}
-                  </span>
-                  <FaAngleRight className="text-xl ml-1" />
-                </button>
-              </div>
+        {cards.map((card) => (
+          <div
+            data-aos="zoom-in-down"
+            key={card.id}
+            className="h-[420px] max-w-[400px]  rounded-lg relative overflow-hidden bg-gradient-to-r from-[#1E2836] to-[#10192B]"
+          >
+            <img className="  px-7 pb-7" src={card.Image} alt="" />
+            <div className="px-7">
+              <p className="text-gray-400 font-semibold">{card.title}</p>
+              <p className="text-[#166E3B] font-semibold mt-2 flex items-center">
+                <AiFillDollarCircle className="text-xl mr-1" /> ${card.price}{" "}
+                USD
+              </p>
             </div>
 
-          ))}
+            <div className=" text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
+              {/* <Tooltip availableInStock={card.availableInStock} message={`There's currently ${card.availableInStock} item left in stock `}> */}
+
+              <Tooltip
+                availableInStock={card.availableInStock}
+                message={
+                  card.availableInStock === 0
+                    ? "No more items left in stock, check later"
+                    : `There's currently ${card.availableInStock} items left in stock`
+                }
+              >
+                <button
+                  className={`ms-4 flex items-center ${
+                    !card.availableInStock == 0
+                      ? "hover:text-[#6366F1]"
+                      : "hover:text-red-700"
+                  }`}
+                >
+                  <IoCube className="text-base mr-1" />
+                  {card.availableInStock}
+                </button>
+              </Tooltip>
+              <button
+                onClick={() => openModal(card.id)}
+                className={`flex items-center justify-between ps-3 pe-4 py-1 ${
+                  card.availableInStock == 0
+                    ? "hover:bg-gradient-to-r from-[#33393a] to-[#615f64]"
+                    : "hover:bg-gradient-to-r from-[#473596] to-[#964FE6]"
+                }`}
+              >
+                <span>
+                  {card.availableInStock === 0 ? "Out of stock" : "Purchase"}
+                </span>
+                <FaAngleRight className="text-xl ml-1" />
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <div className="text-slate-300">
@@ -120,9 +127,7 @@ const EuOpen = () => {
                     onClick={() => setDownState(!downState)}
                     className="border flex justify-between items-center p-2 text-lg border-stone-400 mt-8 text cursor-pointer  rounded-md"
                   >
-                    <p>
-                      Choose one of {modatData?.cryptoData?.length} options
-                    </p>
+                    <p>Choose one of {modatData?.cryptoData?.length} options</p>
                     <IoIosArrowDown />
                   </div>
                   {!downState && (
@@ -149,10 +154,11 @@ const EuOpen = () => {
                           >
                             <p className="">{item.title}</p>
                             <span
-                              className={`flex h-[30px]  px-3 items-center justify-center border text-sm py-0 rounded-lg ${item.stock > 0
-                                ? "text-green-600  border-green-600"
-                                : "text-slate-500"
-                                }`}
+                              className={`flex h-[30px]  px-3 items-center justify-center border text-sm py-0 rounded-lg ${
+                                item.stock > 0
+                                  ? "text-green-600  border-green-600"
+                                  : "text-slate-500"
+                              }`}
                             >
                               {" "}
                               <AiFillDollarCircle />
@@ -170,46 +176,42 @@ const EuOpen = () => {
                     {modatData?.cryptoTitle}
                   </p>
                   <div className="text-center text-sm flex justify-center">
-                    <span>min. Order:1/</span>
+                    <span>min Order: 1 /</span>
                     <p>Stock: {modatData?.cryptoData?.stock} /</p>
                     <p>Price:{modatData?.cryptoData?.price}</p>
                   </div>
                   <hr className="bg-slate-600 my-8" />
                   <div>
                     {/* header text */}
-                    {
-                      modatData?.cryptoData?.discription?.topUp && (
-                        // <p className="text-xl">{modatData?.cryptoData?.discription?.deliveryThese}</p> //need change todo
-                        modatData?.cryptoData?.discription?.topUp?.map(item => <li className="text-xl py-1">{item}</li>)
-                      )
-                    }
-                    {
-                      modatData?.cryptoData?.discription?.deliveryThese && (
-                        <p className="text-xl">{modatData?.cryptoData?.discription?.deliveryThese}</p> //need change todo
-                      )
-                    }
+                    {modatData?.cryptoData?.discription?.topUp &&
+                      // <p className="text-xl">{modatData?.cryptoData?.discription?.deliveryThese}</p> //need change todo
+                      modatData?.cryptoData?.discription?.topUp?.map((item) => (
+                        <li className="text-xl py-1">{item}</li>
+                      ))}
+                    {modatData?.cryptoData?.discription?.deliveryThese && (
+                      <p className="text-xl">
+                        {modatData?.cryptoData?.discription?.deliveryThese}
+                      </p> //need change todo
+                    )}
                     <p>
-
-                      {
-                        modatData?.cryptoData?.discription?.whay$ && (
-                          <p> What{modatData?.cryptoData?.discription.whay$}</p> //need change todo
-                        )
-                      }
+                      {modatData?.cryptoData?.discription?.whay$ && (
+                        <p> What{modatData?.cryptoData?.discription.whay$}</p> //need change todo
+                      )}
                     </p>
                     <p>
-
-                      {
-                        modatData?.cryptoData?.discription?.threeWords && (
-                          <p> three words {modatData?.cryptoData?.discription?.threeWords}</p> //need change todo
-                        )
-                      }
+                      {modatData?.cryptoData?.discription?.threeWords && (
+                        <p>
+                          {" "}
+                          three words{" "}
+                          {modatData?.cryptoData?.discription?.threeWords}
+                        </p> //need change todo
+                      )}
                     </p>
                     <p>
-                      {
-                        modatData?.cryptoData?.discription?.threeWords && (
-                          modatData?.cryptoData?.discription?.threeWords.map(item => <p>{item}</p>)
-                        )
-                      }
+                      {modatData?.cryptoData?.discription?.threeWords &&
+                        modatData?.cryptoData?.discription?.threeWords.map(
+                          (item) => <p>{item}</p>
+                        )}
                     </p>
 
                     {modatData?.cryptoData?.discription?.whayNeed && (
@@ -233,7 +235,8 @@ const EuOpen = () => {
                     )}
                     {modatData?.cryptoData?.discription?.comes_with && (
                       <p className="text-xl my-4">
-                        Comes with: {modatData?.cryptoData?.discription?.comes_with}
+                        Comes with:{" "}
+                        {modatData?.cryptoData?.discription?.comes_with}
                       </p>
                     )}
                     {modatData?.cryptoData?.discription?.middelText && (
@@ -322,12 +325,14 @@ const EuOpen = () => {
                               onChange={(e) => setQuantity(e.target.value)}
                               type="number"
                               className="bg-transparent ps-3 rounded-e-md focus:border-stone-400 outline-none w-full border border-stone-500 py-2"
-                              defaultValue={multidata.stock}
+                              // defaultValue={multidata.stock}
                               placeholder="1"
                             />
                           </div>
                         )}
-                        <button
+
+                        {/* previous botton */}
+                        {/* <button
                           className={` to-blue-600 ${modatData?.cryptoData?.stock <= 0
                             ? "cursor-not-allowed bg-blue-900 "
                             : ""
@@ -337,6 +342,22 @@ const EuOpen = () => {
                           {quantity > 1
                             ? quantity * modatData?.cryptoData?.price
                             : modatData?.cryptoData?.price}{" "}
+                        </button> */}
+
+                        <button
+                          className={`to-blue-600 ${
+                            modatData?.cryptoData?.stock <= 0
+                              ? "cursor-not-allowed bg-blue-900 "
+                              : ""
+                          } bg-blue-600 hover:bg-blue-800 w-full mt-4 py-2 rounded-md font-semibold`}
+                        >
+                          {modatData?.cryptoData?.stock <= 0
+                            ? "Out Of Stock"
+                            : `Check out for $${
+                                quantity > 1
+                                  ? quantity * modatData?.cryptoData?.price
+                                  : modatData?.cryptoData?.price
+                              }`}
                         </button>
                       </div>
                     </div>

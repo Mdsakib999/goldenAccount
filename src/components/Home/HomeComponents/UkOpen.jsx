@@ -87,10 +87,11 @@ const UkOpen = () => {
                 }
               >
                 <button
-                  className={`ms-4 flex items-center ${!card.availableInStock == 0
-                    ? "hover:text-[#6366F1]"
-                    : "hover:text-red-700"
-                    }`}
+                  className={`ms-4 flex items-center ${
+                    !card.availableInStock == 0
+                      ? "hover:text-[#6366F1]"
+                      : "hover:text-red-700"
+                  }`}
                 >
                   <IoCube className="text-base mr-1" />
                   {card.availableInStock}
@@ -98,10 +99,11 @@ const UkOpen = () => {
               </Tooltip>
               <button
                 onClick={() => openModal(card.id)}
-                className={`flex items-center justify-between ps-3 pe-4 py-1 ${card.availableInStock === 0
-                  ? "hover:bg-gradient-to-r from-[#33393a] to-[#615f64]"
-                  : "hover:bg-gradient-to-r from-[#473596] to-[#964FE6]"
-                  }`}
+                className={`flex items-center justify-between ps-3 pe-4 py-1 ${
+                  card.availableInStock === 0
+                    ? "hover:bg-gradient-to-r from-[#33393a] to-[#615f64]"
+                    : "hover:bg-gradient-to-r from-[#473596] to-[#964FE6]"
+                }`}
               >
                 <span>
                   {card.availableInStock === 0 ? "Out of stock" : "Purchase"}
@@ -128,15 +130,13 @@ const UkOpen = () => {
                     onClick={() => setDownState(!downState)}
                     className="border flex justify-between items-center p-2 text-lg border-stone-400 mt-8 text cursor-pointer  rounded-md"
                   >
-                    <p>
-                      Choose one of {modatData?.cryptoData?.length} options
-                    </p>
+                    <p>Choose one of {modatData?.cryptoData?.length} options</p>
                     <IoIosArrowDown />
                   </div>
                   {!downState && (
                     <div className="mt-2">
                       <button className="w-full bg-blue-900 py-2 rounded-md">
-                        Please select one Opotion above
+                        Please select one Option above
                       </button>
                     </div>
                   )}
@@ -157,10 +157,11 @@ const UkOpen = () => {
                           >
                             <p className="">{item.title}</p>
                             <span
-                              className={`flex h-[30px]  px-3 items-center justify-center border text-sm py-0 rounded-lg ${item.stock > 0
-                                ? "text-green-600  border-green-600"
-                                : "text-slate-500"
-                                }`}
+                              className={`flex h-[30px]  px-3 items-center justify-center border text-sm py-0 rounded-lg ${
+                                item.stock > 0
+                                  ? "text-green-600  border-green-600"
+                                  : "text-slate-500"
+                              }`}
                             >
                               {" "}
                               <AiFillDollarCircle />
@@ -185,39 +186,35 @@ const UkOpen = () => {
                   <hr className="bg-slate-600 my-8" />
                   <div>
                     {/* header text */}
-                    {
-                      modatData?.cryptoData?.discription?.topUp && (
-                        // <p className="text-xl">{modatData?.cryptoData?.discription?.deliveryThese}</p> //need change todo
-                        modatData?.cryptoData?.discription?.topUp?.map(item => <li className="text-xl py-1">{item}</li>)
-                      )
-                    }
-                    {
-                      modatData?.cryptoData?.discription?.deliveryThese && (
-                        <p className="text-xl">{modatData?.cryptoData?.discription?.deliveryThese}</p> //need change todo
-                      )
-                    }
+                    {modatData?.cryptoData?.discription?.topUp &&
+                      // <p className="text-xl">{modatData?.cryptoData?.discription?.deliveryThese}</p> //need change todo
+                      modatData?.cryptoData?.discription?.topUp?.map((item) => (
+                        <li className="text-xl py-1">{item}</li>
+                      ))}
+                    {modatData?.cryptoData?.discription?.deliveryThese && (
+                      <p className="text-xl">
+                        {modatData?.cryptoData?.discription?.deliveryThese}
+                      </p> //need change todo
+                    )}
                     <p>
-
-                      {
-                        modatData?.cryptoData?.discription?.whay$ && (
-                          <p> What{modatData?.cryptoData?.discription.whay$}</p> //need change todo
-                        )
-                      }
+                      {modatData?.cryptoData?.discription?.whay$ && (
+                        <p> What{modatData?.cryptoData?.discription.whay$}</p> //need change todo
+                      )}
                     </p>
                     <p>
-
-                      {
-                        modatData?.cryptoData?.discription?.threeWords && (
-                          <p> three words {modatData?.cryptoData?.discription?.threeWords}</p> //need change todo
-                        )
-                      }
+                      {modatData?.cryptoData?.discription?.threeWords && (
+                        <p>
+                          {" "}
+                          three words{" "}
+                          {modatData?.cryptoData?.discription?.threeWords}
+                        </p> //need change todo
+                      )}
                     </p>
                     <p>
-                      {
-                        modatData?.cryptoData?.discription?.threeWords && (
-                          modatData?.cryptoData?.discription?.threeWords.map(item => <p>{item}</p>)
-                        )
-                      }
+                      {modatData?.cryptoData?.discription?.threeWords &&
+                        modatData?.cryptoData?.discription?.threeWords.map(
+                          (item) => <p>{item}</p>
+                        )}
                     </p>
 
                     {modatData?.cryptoData?.discription?.whayNeed && (
@@ -241,7 +238,8 @@ const UkOpen = () => {
                     )}
                     {modatData?.cryptoData?.discription?.comes_with && (
                       <p className="text-xl my-4">
-                        Comes with: {modatData?.cryptoData?.discription?.comes_with}
+                        Comes with:{" "}
+                        {modatData?.cryptoData?.discription?.comes_with}
                       </p>
                     )}
                     {modatData?.cryptoData?.discription?.middelText && (
@@ -335,16 +333,32 @@ const UkOpen = () => {
                             />
                           </div>
                         )}
-                        <button
+                        {/* <button
                           className={` to-blue-600 ${modatData?.cryptoData?.stock <= 0
-                            ? "cursor-not-allowed bg-blue-900 "
+                            ? "cursor-not-allowed bg-blue-800 "
                             : ""
-                            }  bg-blue-500 hover:bg-blue-600 w-full mt-4 py-2 rounded-md font-semibold`}
+                            }  bg-blue-600 hover:bg-blue-700 w-full mt-4 py-2 rounded-md font-semibold`}
                         >
                           Check out for {" $"}
                           {quantity > 1
                             ? quantity * modatData?.cryptoData?.price
                             : modatData?.cryptoData?.price}{" "}
+                        </button> */}
+
+                        <button
+                          className={`to-blue-600 ${
+                            modatData?.cryptoData?.stock <= 0
+                              ? "cursor-not-allowed bg-blue-900 "
+                              : ""
+                          } bg-blue-600 hover:bg-blue-700 w-full mt-4 py-2 rounded-md font-semibold`}
+                        >
+                          {modatData?.cryptoData?.stock <= 0
+                            ? "Out Of Stock"
+                            : `Check out for $${
+                                quantity > 1
+                                  ? quantity * modatData?.cryptoData?.price
+                                  : modatData?.cryptoData?.price
+                              }`}
                         </button>
                       </div>
                     </div>

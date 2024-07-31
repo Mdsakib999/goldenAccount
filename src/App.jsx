@@ -13,9 +13,11 @@ function App() {
     }, 3000);
     return () => clearTimeout(timer);
   }, []);
-  if (isLoading) {
-    return <Loading />
-  }
+
+  // if (isLoading) {
+  //   return <Loading />
+  // }
+  
   return (
     <div className=''>
       <Outlet></Outlet>

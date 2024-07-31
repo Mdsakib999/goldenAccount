@@ -2,6 +2,9 @@ import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
 import Home from './components/Home/Home';
 import Payment from './components/Payment/Payment';
+import AdminDashbordLayout from './AdminDashbordLayout';
+import AddItem from './components/AdminDashbord/AddItem';
+import MenageItem from './components/AdminDashbord/MenageItem';
 
 export const router = createBrowserRouter([
     {
@@ -18,6 +21,20 @@ export const router = createBrowserRouter([
             },
 
 
+        ]
+    },
+    {
+        path: '/dashbord',
+        element: <AdminDashbordLayout />,
+        children: [
+            {
+                path: 'admin/add_item',
+                element: <AddItem />
+            },
+            {
+                path: 'admin/manage_item',
+                element: <MenageItem />
+            }
         ]
     }
 ])

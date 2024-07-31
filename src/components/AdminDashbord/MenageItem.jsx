@@ -68,7 +68,7 @@ const MenageItem = () => {
                         <tr>
                             <th className="py-2 px-4 border-b-2 border-gray-200 text-left text-sm font-semibold text-gray-700">Image</th>
                             <th className="py-2 px-4 border-b-2 border-gray-200 text-left text-sm font-semibold text-gray-700">Title</th>
-                            <th className="py-2 px-4 border-b-2 border-gray-200 text-left text-sm font-semibold text-gray-700">Sotck</th>
+                            <th className="py-2 px-4 border-b-2 border-gray-200 text-left text-sm font-semibold text-gray-700">Stock</th>
                             <th className="py-2 px-4 border-b-2 border-gray-200 text-left text-sm font-semibold text-gray-700">price</th>
                             <th className="py-2 px-4 border-b-2 border-gray-200 text-left text-sm font-semibold text-gray-700">Actions</th>
                         </tr>

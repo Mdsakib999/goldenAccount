@@ -45,7 +45,7 @@ const Canada = () => {
     //   .catch((error) => console.error('Error fetching data:', error));
   }, []);
 
-  console.log(cards);
+  // console.log(cards);
 
   return (
     <div className="bg-slate-900 md:pt-16 relative">

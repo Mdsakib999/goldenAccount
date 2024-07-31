@@ -124,7 +124,7 @@ const Footer = () => {
             </p>
           </div>
           <div class="py-5 w-3/5 bg-gradient-to-r from-indigo-500 to-indigo-700 text-center rounded-r-md text-gray-300">
-            <p class="font-semibold">850 customers have</p>
+            <p class="font-semibold">50 customers have</p>
             <p class="font-semibold">rated this shop</p>
           </div>
         </div>

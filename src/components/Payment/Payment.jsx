@@ -1,21 +1,24 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { MdAccountBalanceWallet, MdReceipt } from "react-icons/md";
 import { IoMdCalendar, IoMdPricetag, IoIosArrowForward } from "react-icons/io";
 import { SiLitecoin, SiDogecoin, SiTether, SiPolygon } from "react-icons/si";
-import { v4 as uuid } from "uuid";
 import Modal2 from "../../utilsComponents/Modal2";
 import { Button, DialogTitle } from "@headlessui/react";
 import { FaEthereum, FaBitcoin } from "react-icons/fa";
 import { IoSearch, IoStar } from "react-icons/io5";
 import HomeProfile from "../../utilsComponents/HomeProfile";
+import { formatDate } from "../../utils/getData";
 
 
 
 const Payment = () => {
-    const [unicId, setUnicId] = useState('')
+
     const [data, setData] = useState([])
     const [isOpen, setIsOpen] = useState(false)
+    const location = useLocation()
+    console.log(location.state);
+    const { email, title, formatedDate, amount, unicId } = location.state
     const open = () => {
         setIsOpen(true)
     }
@@ -31,16 +34,16 @@ const Payment = () => {
                 setData(product)
             })
     }, [])
-    useEffect(() => {
-        const unique_id = uuid().replace(/-/g, '');
-        const small_id = unique_id.slice(0, 18).split('-').join('');
-        setUnicId(small_id)
+    // useEffect(() => {
+    //     const unique_id = uuid().replace(/-/g, '');
+    //     const small_id = unique_id.slice(0, 18).split('-').join('');
+    //     setUnicId(small_id)
 
-    }, [])
+    // }, [])
     // data 
     const formattedDate = formatDate();
 
-    const { title, price } = data
+    // const { title, price } = data
     return (
         <div>
 
@@ -51,14 +54,14 @@ const Payment = () => {
                 <div className='flex justify-center items-center gap-x-5 pb-8 mt-6'>
                     <div className='relative '>
 
-                    <input className='bg-slate-700 py-1 pl-10 rounded-md border border-slate-700 focus:border-purple-500 outline-none ' placeholder='Search for a product' type="text" />
+                        <input className='bg-slate-700 py-1 pl-10 rounded-md border border-slate-700 focus:border-purple-500 outline-none ' placeholder='Search for a product' type="text" />
 
-                    <IoSearch className='absolute md:left-4 md:top-[9px] left-4 top-2' />
+                        <IoSearch className='absolute md:left-4 md:top-[9px] left-4 top-2' />
                     </div>
 
                     {/* <p className=' flex px-2 py-1 rounded-lg items-center gap-x-3 bg-slate-700 font-semibold'><BsPersonSquare /> Profile</p> */}
 
-                     <HomeProfile></HomeProfile>
+                    <HomeProfile></HomeProfile>
                 </div>
 
             </div>
@@ -69,13 +72,13 @@ const Payment = () => {
                 <div className="bg-gradient-to-b from-[#402B8B] to-[#6A21A7] w-[40%] px-7 rounded-s-lg py-9">
                     <p className=" font-semibold text-[#C5BAD6]">Your order</p>
                     <p className="text-xl font-medium mt-2" >{title}</p>
-                    <p className="text-[#C5BAD6] mt-1 font-medium">lalos20193@luravel.com</p>
+                    <p className="text-[#C5BAD6] mt-1 font-medium">{email}</p>
                     <div className="mt-8 space-y-6">
                         <div className="flex gap-5">
                             <MdAccountBalanceWallet className="size-6 text-[#C5BAD6] mt-2" />
                             <p className=" font-medium flex flex-col ">
                                 <span className="text-[#C5BAD6]">Amount</span>
-                                <span className=" mt-1">${price} USD</span>
+                                <span className=" mt-1">${amount} USD</span>
                             </p>
                         </div>
                         <div className="flex gap-5">
@@ -170,23 +173,3 @@ const Payment = () => {
 
 export default Payment;
 
-function formatDate() {
-    const now = new Date();
-
-    // Get hours and minutes
-    let hours = now.getHours();
-    const minutes = now.getMinutes();
-    const ampm = hours >= 12 ? 'PM' : 'AM';
-
-    // Convert hours to 12-hour format
-    hours = hours % 12;
-    hours = hours ? hours : 12; // the hour '0' should be '12'
-
-    // Format minutes to always have two digits
-    const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
-
-    // Create the formatted date string
-    const formattedDate = `Today at ${hours}:${formattedMinutes} ${ampm}`;
-
-    return formattedDate;
-}

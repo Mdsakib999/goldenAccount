@@ -17,7 +17,7 @@ const Modal = ({ isOpen, onClose, children }) => {
                 isOpen && (
                     <div
                         onClick={handleOutsideClick}
-                        className=" w-full  overflow-y-auto fixed inset-0 flex justify-center items-center bg-black bg-opacity-20 backdrop-blur-md z-50">
+                        className=" w-full  overflow-y-auto fixed inset-0 flex justify-center items-center bg-black bg-opacity-20 backdrop-blur-md z-30">
                         <button
                             onClick={onClose}
                             className="absolute top-2 right-2 text-white  focus:outline-none"

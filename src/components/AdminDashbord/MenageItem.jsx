@@ -54,7 +54,6 @@ const MenageItem = () => {
     const handleDelete = async (id) => {
         setDeleteLoading(true)
         const response = await deleteItem({ id })
-        console.log(response);
         if (response) {
             refetch()
             setDeleteLoading(false)

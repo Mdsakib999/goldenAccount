@@ -6,7 +6,6 @@ import Loading from './utilsComponents/Loading/Loading';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [count, setCount] = useState(0)
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -14,9 +13,9 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  // if (isLoading) {
-  //   return <Loading />
-  // }
+  if (isLoading) {
+    return <Loading />
+  }
   
   return (
     <div className=''>

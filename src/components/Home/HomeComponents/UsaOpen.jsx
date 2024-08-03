@@ -53,7 +53,7 @@ const UsaOpen = () => {
   return (
     <div className="bg-slate-900 md:pt-16 pb-20">
       <div className="flex justify-center items-center">
-        <CommonTitle title={"𝗨𝗦𝗔 𝗢𝗣𝗘𝗡-𝗨𝗣 𝗜𝗡𝗦𝗧𝗔𝗡𝗧"} />
+        <CommonTitle title={"USA OPEN-UP INSTANT"} />
 
         <div className="mb-4">
           <Dot3></Dot3>

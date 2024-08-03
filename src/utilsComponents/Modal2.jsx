@@ -1,5 +1,4 @@
 import { Button, Dialog, DialogPanel, DialogTitle } from '@headlessui/react'
-import { useState } from 'react'
 
 const Modal2 = ({ open, close, children, isOpen }) => {
 

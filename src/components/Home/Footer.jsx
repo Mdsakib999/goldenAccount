@@ -113,19 +113,19 @@ const Footer = () => {
         </div>
       </div>
 {/* hhhhhhhh */}
-      <div class="pb-10 max-w-7xl mx-auto flex justify-end">
-        <div class="text-white flex items-center rounded-md shadow-xl md:w-[30%] w-[70%] mx-auto md:mx-0">
-          <div class="bg-gray-700 w-2/5 py-4 rounded-l-md">
-            <p class="text-xl font-bold flex items-center gap-x-1 text-orange-300 ml-4">
+      <div className="pb-10 max-w-7xl mx-auto flex justify-end">
+        <div className="text-white flex items-center rounded-md shadow-xl md:w-[30%] w-[70%] mx-auto md:mx-0">
+          <div className="bg-gray-700 w-2/5 py-4 rounded-l-md">
+            <p className="text-xl font-bold flex items-center gap-x-1 text-orange-300 ml-4">
               <AiFillStar /> 4.5
             </p>
-            <p class="uppercase text-sm font-semibold text-gray-300 mt-2 ml-4">
+            <p className="uppercase text-sm font-semibold text-gray-300 mt-2 ml-4">
               Shop Rating
             </p>
           </div>
-          <div class="py-5 w-3/5 bg-gradient-to-r from-indigo-500 to-indigo-700 text-center rounded-r-md text-gray-300">
-            <p class="font-semibold">50 customers have</p>
-            <p class="font-semibold">rated this shop</p>
+          <div className="py-5 w-3/5 bg-gradient-to-r from-indigo-500 to-indigo-700 text-center rounded-r-md text-gray-300">
+            <p className="font-semibold">50 customers have</p>
+            <p className="font-semibold">rated this shop</p>
           </div>
         </div>
       </div>

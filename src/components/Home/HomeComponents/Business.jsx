@@ -57,7 +57,7 @@ const Business = () => {
 
       <div className="flex justify-center">
         {busnessData?.map((data) => (
-          <CardOne data={data} openModal={openModal} />
+          <CardOne data={data} key={data._id} openModal={openModal} />
         ))}
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal}>

@@ -7,11 +7,11 @@ const Sidebar = ({ setOpen, open }) => {
     const dispatch = useDispatch()
 
     const Menus = [
+        // { title: "Home", src: "Debt", link: '/' },
         { title: "Add Product", src: "Overview", link: '/dashbord/admin/add_item' },
         { title: "Menage product", src: "Transactions", link: '/dashbord/admin/manage_item' },
-
-
     ];
+    
     const footerMenu = [
         { title: "Home", src: "Notifications", link: '/' },
 
@@ -21,7 +21,7 @@ const Sidebar = ({ setOpen, open }) => {
     }
 
     return (
-        <div className="flex overflow-y-auto border-l-2">
+        <div className="flex overflow-y-auto border-l-2 ">
             <div
                 className={` ${open ? "w-72" : "w-20 "
                     } bg-backgroundColor h-screen fixed top-0 left-0  p-5  pt-8  duration-300`}
@@ -34,8 +34,8 @@ const Sidebar = ({ setOpen, open }) => {
                 />
                 <div className="flex gap-x-4 items-center">
                     <img
-                        src="/assets/smiley.svg"
-                        className={`cursor-pointer duration-500 ${open && "rotate-[360deg]"
+                        src="/assets/logo.png"
+                        className={`w-[40px] cursor-pointer duration-500 ${open && "rotate-[360deg]"
                             }`}
                     />
                     <h1

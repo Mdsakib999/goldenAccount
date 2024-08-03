@@ -11,7 +11,7 @@ const MenageItem = () => {
     const [imageUrl, setImageUrl] = useState('')
     const [content, setContent] = useState('')
     const [deleteLoading, setDeleteLoading] = useState(false)
-    const { data: itemData = [], error, isLoading, refetch } = useGetItemQuery()
+    const { data: itemData = [], error, isLoading, refetch } = useGetItemQuery(undefined, { refetchOnFocus:true })
     const [modalData, setModalData] = useState({})
     const [isOpen, setIsOpen] = useState(false)
     const [updatePost] = useUpdateItemMutation(undefined)
@@ -61,7 +61,7 @@ const MenageItem = () => {
     }
     return (
         <div>
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto overflow-y-auto">
                 <table className="min-w-full bg-white text-black">
                     <thead>
                         <tr>

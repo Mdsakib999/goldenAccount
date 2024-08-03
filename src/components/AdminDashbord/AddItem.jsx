@@ -42,7 +42,7 @@ const AddItem = () => {
                 <div className=" w-[80%] mx-auto  h-full overflow-y-auto text-black">
 
                     <div className="mt-5 md:mt-0 md:col-span-2">
-                        <form onSubmit={handelSubmit} >
+                        <form onSubmit={handelSubmit} className='overflow-y-auto'>
                             <div className="shadow sm:rounded-md sm:overflow-hidden">
                                 <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
                                     <div className="grid grid-cols-3 gap-6">
@@ -86,7 +86,7 @@ const AddItem = () => {
                                             categoryItem.map(({ title, value }) => <option key={value} value={value}>{title}</option>)
                                         }
                                     </select>
-                                    <div className='text-black'>
+                                    <div className='text-black overflow-y-auto'>
 
                                         <JoditEditor
                                             ref={editor}

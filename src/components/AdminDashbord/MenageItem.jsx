@@ -11,12 +11,12 @@ const MenageItem = () => {
     const [imageUrl, setImageUrl] = useState('')
     const [content, setContent] = useState('')
     const [deleteLoading, setDeleteLoading] = useState(false)
-    const { data: itemData = [], error, isLoading, refetch } = useGetItemQuery(undefined, { refetchOnFocus: true })
+    const { data: itemData = [], error, isLoading, refetch } = useGetItemQuery()
     const [modalData, setModalData] = useState({})
     const [isOpen, setIsOpen] = useState(false)
     const [updatePost] = useUpdateItemMutation(undefined)
     const [deleteItem,] = useDeleteItemMutation(undefined)
-
+    console.log(itemData);
     const open = (data) => {
         setIsOpen(true)
         setModalData(data)

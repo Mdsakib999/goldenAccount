@@ -1,18 +1,24 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { logOut } from '../redux/features/Auth/authSlice';
 
 const Sidebar = ({ setOpen, open }) => {
+    const dispatch = useDispatch()
 
     const Menus = [
         { title: "Add Product", src: "Overview", link: '/dashbord/admin/add_item' },
         { title: "Menage product", src: "Transactions", link: '/dashbord/admin/manage_item' },
-        { title: "Add Categories", src: "Card", gap: true, link: '/dashbord/admin/add_categories' },
-        { title: "Manage Categories", src: "Calendar", link: '/dashbord/admin/manage_categories' },
-        { title: "Home", src: "Debt", link: '/' },
-        { title: "Legal information", src: "Legal" },
-        { title: "Notifications ", src: "Notifications", gap: true },
-        { title: "Setting", src: "Settings" },
+
+
     ];
+    const footerMenu = [
+        { title: "Home", src: "Notifications", link: '/' },
+
+    ]
+    const handelLogOut = () => {
+        dispatch(logOut())
+    }
 
     return (
         <div className="flex overflow-y-auto border-l-2">
@@ -46,7 +52,7 @@ const Sidebar = ({ setOpen, open }) => {
                             key={index}>
                             <li
                                 className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-amber-300 text-sm items-center gap-x-4 
-                ${Menu.gap ? "mt-9" : "mt-2"} ${index === 0 && "bg-light-white"
+                ${Menu.gap ? "mt-8" : "mt-2"} ${index === 0 && "bg-light-white"
                                     } `}
                             >
                                 <img src={`/assets/${Menu.src}.svg`} />
@@ -56,6 +62,25 @@ const Sidebar = ({ setOpen, open }) => {
                             </li>
                         </Link>
                     ))}
+                    <div className='absolute bottom-5'>
+                        {footerMenu.map((Menu, index) => (
+                            <Link
+                                to={Menu.link}
+                                key={index}>
+                                <li
+                                    className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-amber-300 text-sm items-center gap-x-4 
+                ${Menu.gap ? "mt-8" : "mt-2"} ${index === 0 && "bg-light-white"
+                                        } `}
+                                >
+                                    {/* <img src={`/assets/${Menu.src}.svg`} /> */}
+                                    <span className={`${!open && "hidden"} origin-left duration-200`}>
+                                        {Menu.title}
+                                    </span>
+                                </li>
+                            </Link>
+                        ))}
+                        <span onClick={handelLogOut} className='flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-amber-300 text-sm items-center gap-x-4 '>sign out</span>
+                    </div>
                 </ul>
             </div>
 

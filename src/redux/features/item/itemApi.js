@@ -25,8 +25,18 @@ const itemApi = baseApi.injectEndpoints({
         method: "DELETE",
       }),
     }),
+    getItemByCategory: build.query({
+      query: (category) => ({
+        url: `/items?category=${category}`,
+        method: "GET",
+      }),
+    }),
   }),
 });
 
-export const { useGetItemQuery, useUpdateItemMutation, useDeleteItemMutation } =
-  itemApi;
+export const {
+  useGetItemQuery,
+  useUpdateItemMutation,
+  useDeleteItemMutation,
+  useGetItemByCategoryQuery,
+} = itemApi;

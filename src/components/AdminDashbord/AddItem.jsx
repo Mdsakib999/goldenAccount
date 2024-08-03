@@ -4,6 +4,7 @@ import { categoryItem } from '../../utils/categoriesItem';
 import { cloudinaryUpload } from '../../utils/getImageLink';
 import axios from 'axios';
 import { FaSpinner } from 'react-icons/fa';
+import { usePostItemMutation } from '../../redux/features/item/itemApi';
 
 
 
@@ -11,6 +12,7 @@ const AddItem = () => {
     const editor = useRef(null);
     const [content, setContent] = useState('');
     const [isLoading, setIsLoading] = useState(false)
+    const [postData] = usePostItemMutation(undefined)
 
     const handelSubmit = async (e) => {
         e.preventDefault()
@@ -24,8 +26,7 @@ const AddItem = () => {
         const res = await cloudinaryUpload(imageFile)
         const image = res.secure_url
         const data = { title, price, stock, category, cover_image: image, description: `${content}` }
-        console.log(data);
-        const itemUpdateRes = await axios.post(`${import.meta.env.VITE_SERVER_LINK}/item`, data)
+        const itemUpdateRes = await postData(data)
         if (itemUpdateRes) {
             setIsLoading(false)
             e.target.reset();
@@ -38,7 +39,7 @@ const AddItem = () => {
     return (
         <div>
             <div>
-                <div className=" w-[80%] mx-auto h-fit  text-black">
+                <div className=" w-[80%] mx-auto  h-full overflow-y-auto text-black">
 
                     <div className="mt-5 md:mt-0 md:col-span-2">
                         <form onSubmit={handelSubmit} >

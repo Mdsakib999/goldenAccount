@@ -10,6 +10,13 @@ const itemApi = baseApi.injectEndpoints({
         };
       },
     }),
+    postItem: build.mutation({
+      query: (data) => ({
+        url: "/item",
+        method: "POST",
+        body: data,
+      }),
+    }),
     updateItem: build.mutation({
       query: ({ id, payload }) => {
         return {
@@ -46,4 +53,5 @@ export const {
   useDeleteItemMutation,
   useGetItemByCategoryQuery,
   useSearchItemQuery,
+  usePostItemMutation,
 } = itemApi;

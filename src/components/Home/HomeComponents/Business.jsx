@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom";
 const Business = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalData, setModalData] = useState({})
-  const [quantity, setQuantity] = useState('')
+  const [quantity, setQuantity] = useState('1')
   const [email, setEmail] = useState('')
   const navigate = useNavigate()
   const [isOpen, setIsOpen] = useState(false)

@@ -45,3 +45,5 @@ const PrivetRoute = ({ children }) => {
 };
 
 export default PrivetRoute;
+
+{/* <Navigate to={'/dashbord/admin/add_item'} /> */ }

@@ -31,6 +31,12 @@ const itemApi = baseApi.injectEndpoints({
         method: "GET",
       }),
     }),
+    searchItem: build.query({
+      query: (text) => ({
+        url: `/searchData?search=${text}`,
+        method: "GET",
+      }),
+    }),
   }),
 });
 
@@ -39,4 +45,5 @@ export const {
   useUpdateItemMutation,
   useDeleteItemMutation,
   useGetItemByCategoryQuery,
+  useSearchItemQuery,
 } = itemApi;

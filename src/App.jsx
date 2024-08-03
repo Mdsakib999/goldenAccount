@@ -16,7 +16,7 @@ function App() {
   if (isLoading) {
     return <Loading />
   }
-  
+
   return (
     <div className=''>
       <Outlet></Outlet>

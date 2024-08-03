@@ -9,8 +9,7 @@ const AdminDashboardLayout = () => {
             <Sidebar open={open} setOpen={setOpen} />
             <div className={`flex-grow overflow-hidden p-6 bg-gray-100  transition-all  duration-300 ${open ? ' md:ml-72' : ' ml-16 md:ml-20'} sm:ml-20 lg:${open ? 'ml-72' : 'ml-20'}`}>
                 <div className=''>
-                    {/* <p className='text-5xl text-amber-300 mb-6'>Welcome to Admin Dashboard</p> */}
-                    <Outlet />0
+                    <Outlet />
                 </div>
             </div>
         </div>

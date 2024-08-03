@@ -4,18 +4,17 @@ import { Link } from 'react-router-dom';
 const Sidebar = ({ setOpen, open }) => {
 
     const Menus = [
+        { title: "Home", src: "Debt", link: '/' },
         { title: "Add Product", src: "Overview", link: '/dashbord/admin/add_item' },
         { title: "Menage product", src: "Transactions", link: '/dashbord/admin/manage_item' },
         { title: "Add Categories", src: "Card", gap: true, link: '/dashbord/admin/add_categories' },
         { title: "Manage Categories", src: "Calendar", link: '/dashbord/admin/manage_categories' },
-        { title: "Home", src: "Debt", link: '/' },
-        { title: "Legal information", src: "Legal" },
         { title: "Notifications ", src: "Notifications", gap: true },
         { title: "Setting", src: "Settings" },
     ];
 
     return (
-        <div className="flex overflow-y-auto border-l-2">
+        <div className="flex overflow-y-auto border-l-2 ">
             <div
                 className={` ${open ? "w-72" : "w-20 "
                     } bg-backgroundColor h-screen fixed top-0 left-0  p-5  pt-8  duration-300`}

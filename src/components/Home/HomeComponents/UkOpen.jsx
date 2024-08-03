@@ -333,17 +333,6 @@ const UkOpen = () => {
                             />
                           </div>
                         )}
-                        {/* <button
-                          className={` to-blue-600 ${modatData?.cryptoData?.stock <= 0
-                            ? "cursor-not-allowed bg-blue-800 "
-                            : ""
-                            }  bg-blue-600 hover:bg-blue-700 w-full mt-4 py-2 rounded-md font-semibold`}
-                        >
-                          Check out for {" $"}
-                          {quantity > 1
-                            ? quantity * modatData?.cryptoData?.price
-                            : modatData?.cryptoData?.price}{" "}
-                        </button> */}
 
                         <button
                           className={`to-blue-600 ${

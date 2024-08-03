@@ -37,8 +37,9 @@ const AddItem = () => {
 
     return (
         <div>
-            <div>
-                <div className=" w-[80%] mx-auto h-fit  text-black">
+            <div> 
+                <p className='text-black text-center mb-5 text-2xl font-semibold'>Add Product</p>
+                <div className=" w-[80%] mx-auto h-fit  text-black ">
 
                     <div className="mt-5 md:mt-0 md:col-span-2">
                         <form onSubmit={handelSubmit} >

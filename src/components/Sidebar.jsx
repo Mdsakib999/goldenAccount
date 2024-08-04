@@ -34,8 +34,8 @@ const Sidebar = ({ setOpen, open }) => {
                 />
                 <div className="flex gap-x-4 items-center">
                     <img
-                        src="/assets/smiley.svg"
-                        className={`cursor-pointer duration-500 ${open && "rotate-[360deg]"
+                        src="/assets/logo.png"
+                        className={`w-[40px] cursor-pointer duration-500 ${open && "rotate-[360deg]"
                             }`}
                     />
                     <h1

@@ -85,7 +85,7 @@ const Asia = () => {
               {/* <Tooltip availableInStock={card.availableInStock} message={`There's currently ${card.availableInStock} item left in stock `}> */}
 
               <Tooltip
-                availableInStock={card.stock}
+                stock={card.stock}
                 message={
                   card.stock === 0
                     ? "No more items left in stock, check later"
@@ -93,7 +93,7 @@ const Asia = () => {
                 }
               >
                 <button
-                  className={`ms-4 flex items-center ${!card.stock == 0
+                  className={`ms-4 flex items-center ${card.stock != 0
                     ? "hover:text-[#6366F1]"
                     : "hover:text-red-700"
                     }`}

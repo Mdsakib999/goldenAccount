@@ -38,21 +38,21 @@ const PrivetRoute = ({ children }) => {
         }
     }, [token, dispatch, isError]);
 
-    if (!token && role !== 'superAdmin') {
+    if (token && role == 'superAdmin') {
         return (
-            <form onSubmit={handeLogin} className='flex flex-col w-[30%] mx-auto space-y-3'>
-                <input type="email" name='email' placeholder='email' defaultValue={"safiislam04@gmail.com"} className='text-black' />
-                <input type="password" name='password' placeholder='password' defaultValue={"safi@123"} className='text-black' />
-                <button className='bg-blue-500'>Submit</button>
-                <span className='text-red-500'>{errors && errors}</span>
-            </form>
-        )
+            <div>
+                {children}
+            </div>
+        );
     }
     return (
-        <div>
-            {children}
-        </div>
-    );
+        <form onSubmit={handeLogin} className='flex flex-col w-[30%] mx-auto space-y-3'>
+            <input type="email" name='email' placeholder='email' defaultValue={"safiislam04@gmail.com"} className='text-black' />
+            <input type="password" name='password' placeholder='password' defaultValue={"safi@123"} className='text-black' />
+            <button className='bg-blue-500'>Submit</button>
+            <span className='text-red-500'>{errors && errors}</span>
+        </form>
+    )
 };
 
 export default PrivetRoute;

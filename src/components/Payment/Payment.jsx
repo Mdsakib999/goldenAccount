@@ -17,7 +17,6 @@ const Payment = () => {
     const [data, setData] = useState([])
     const [isOpen, setIsOpen] = useState(false)
     const location = useLocation()
-    console.log(location.state);
     const { email, title, formatedDate, amount, unicId } = location.state
     const open = () => {
         setIsOpen(true)

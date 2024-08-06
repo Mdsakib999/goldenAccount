@@ -82,15 +82,15 @@ const Argentina = () => {
             </div>
             <div className="text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
               <Tooltip
-                availableInStock={card.sotck}
+                stock={card.stock}
                 message={
-                  card.availableInStock === 0
+                  card.stock === 0
                     ? "No more items left in stock, check later"
                     : `There's currently ${card.stock} items left in stock`
                 }
               >
                 <button
-                  className={`ms-4 flex items-center ${!card.stock == 0
+                  className={`ms-4 flex items-center ${card.stock != 0
                     ? "hover:text-[#6366F1]"
                     : "hover:text-red-700"
                     }`}

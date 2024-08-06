@@ -16,7 +16,7 @@ const MenageItem = () => {
     const [isOpen, setIsOpen] = useState(false)
     const [updatePost] = useUpdateItemMutation(undefined)
     const [deleteItem,] = useDeleteItemMutation(undefined)
-    console.log(itemData);
+
     const open = (data) => {
         setIsOpen(true)
         setModalData(data)
@@ -43,7 +43,6 @@ const MenageItem = () => {
             data.cover_image = image
             data.oldImageUrl = modalData.cover_image
         }
-        console.log(data);
         const response = await updatePost({ id: modalData._id, payload: data })
         if (response) {
             setDeleteLoading(false)

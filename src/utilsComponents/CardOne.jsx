@@ -21,12 +21,12 @@ const CardOne = ({ data, openModal }) => {
                 </p>
             </div>
             <div className="text-gray-400 bg-[#1E2836] font-semibold grid grid-cols-2 absolute left-0 right-0 bottom-0">
-                <Tooltip message={`There's currently ${stock} item left in stock `}>
+                <Tooltip message={`${stock > 0 ? `There's currently ${stock} item left in stock ` : "No More items left in stock, check back later"}`} stock={stock}>
                     <span className=" ms-4  flex items-center">
                         <IoCube className="text-base  mr-1" /> {stock}
                     </span>
                 </Tooltip>
-                <button onClick={() => openModal(data)} className="flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1">
+                <button onClick={() => openModal(data)} className={`flex items-center justify-between ps-3 pe-4 hover:bg-gradient-to-r from-[#473596] to-[#964FE6] py-1`}>
                     <span>Purchase</span>
                     <FaAngleRight className="text-xl ml-1" />
                 </button>

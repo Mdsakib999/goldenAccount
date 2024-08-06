@@ -12,6 +12,9 @@ function App() {
     }, 3000);
     return () => clearTimeout(timer);
   }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [window])
 
   if (isLoading) {
     return <Loading />

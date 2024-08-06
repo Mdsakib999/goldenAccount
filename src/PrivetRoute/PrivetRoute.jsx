@@ -17,7 +17,6 @@ const PrivetRoute = ({ children }) => {
         const email = form.email.value
         const password = form.password.value
         const res = await loginUser({ email, password })
-        console.log(res);
         if (res.data.error) {
             setError(res?.data?.message)
         }

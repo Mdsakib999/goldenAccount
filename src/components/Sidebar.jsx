@@ -15,7 +15,8 @@ const Sidebar = ({ setOpen, open }) => {
     const footerMenu = [
         { title: "Home", src: "Notifications", link: '/' },
 
-    ]
+    ];
+    
     const handelLogOut = () => {
         dispatch(logOut())
     }

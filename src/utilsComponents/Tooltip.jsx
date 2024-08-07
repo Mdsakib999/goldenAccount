@@ -1,6 +1,6 @@
 
 
-const Tooltip = ({ message, children, availableInStock }) => {
+const Tooltip = ({ message, children, stock }) => {
     return (
         <div className="group relative flex w-fit flex-col items-center justify-center">
             {children}
@@ -8,7 +8,7 @@ const Tooltip = ({ message, children, availableInStock }) => {
                 <div className="flex flex-col items-center">
                     <div className="relative">
 
-                        <div className={`whitespace-nowrap overflow-hidden rounded bg-gray-800 px-3 py-2 text-center text-sm  ${availableInStock == 0 ? 'text-red-600' : 'text-[#6366F1]'} shadow-lg`}>
+                        <div className={`whitespace-nowrap overflow-hidden rounded bg-gray-800 px-3 py-2 text-center text-sm  ${stock == 0 ? 'text-red-600 ms-8' : 'text-[#6366F1]'} shadow-lg`}>
                             {message}
                         </div>
                     </div>

@@ -85,7 +85,7 @@ const Asia = () => {
               {/* <Tooltip availableInStock={card.availableInStock} message={`There's currently ${card.availableInStock} item left in stock `}> */}
 
               <Tooltip
-                availableInStock={card.stock}
+                stock={card.stock}
                 message={
                   card.stock === 0
                     ? "No more items left in stock, check later"
@@ -93,7 +93,7 @@ const Asia = () => {
                 }
               >
                 <button
-                  className={`ms-4 flex items-center ${!card.stock == 0
+                  className={`ms-4 flex items-center ${card.stock != 0
                     ? "hover:text-[#6366F1]"
                     : "hover:text-red-700"
                     }`}
@@ -157,22 +157,23 @@ const Asia = () => {
         <DialogTitle as="h3" className="text-base/7 font-medium text-black">
           Where would you like us to send your purchased goods?
         </DialogTitle>
-        <div className="mt-2 text-sm/6 " >
-          <input type="text" defaultValue={email} onChange={(e) => setEmail(e.target.value)} className='w-full py-1 border-2 rounded-md border-stone-500 focus:boder-[#8262dc] outline-none text-black ps-2 placeholder:text-gray-600 placeholder:font-semibold' placeholder="your@gmail.com" />
-        </div>
-        <div className="mt-4 float-end space-x-3">
-          <Button
-            onClick={close}
-            className={`text-black border hover:border-black rounded-md px-3 py-1`}>
-            Cancel
-          </Button>
-          <Button
-            onClick={handelPayment}
-            className="inline-flex items-center gap-2 rounded-md bg-[#8262dc] py-1.5 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-[#714DD2] data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700"
-          >
-            Checkout
-          </Button>
-        </div>
+        <form onSubmit={handelPayment}>
+          <div className="mt-2 text-sm/6 " >
+            <input type="email" required defaultValue={email} onChange={(e) => setEmail(e.target.value)} className='w-full py-1 border-2 rounded-md border-stone-500 focus:boder-[#8262dc] outline-none text-black ps-2 placeholder:text-gray-600 placeholder:font-semibold' placeholder="your@gmail.com" />
+          </div>
+          <div className="mt-4 float-end space-x-3">
+            <Button
+              onClick={close}
+              className={`text-black border hover:border-black rounded-md px-3 py-1`}>
+              Cancel
+            </Button>
+            <button
+              className="inline-flex items-center gap-2 rounded-md bg-[#8262dc] py-1.5 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-[#714DD2] data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700"
+            >
+              Checkout
+            </button>
+          </div>
+        </form>
       </Modal2>
     </div>
   );

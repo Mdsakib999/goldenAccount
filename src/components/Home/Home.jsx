@@ -5,7 +5,6 @@ import { IoSearch } from "react-icons/io5";
 import Business from './HomeComponents/Business';
 import Crypto from './HomeComponents/Crypto';
 import UsaOpen from './HomeComponents/UsaOpen';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import EuOpen from './HomeComponents/EuOpen';
@@ -24,6 +23,7 @@ import Modal from '../../utilsComponents/Modal';
 import Modal2 from '../../utilsComponents/Modal2';
 import { Button, DialogTitle } from '@headlessui/react';
 import Divider from '../../utilsComponents/divider';
+import { v4 as uuid } from "uuid";
 
 const Home = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -68,6 +68,9 @@ const Home = () => {
         setIsModalOpen(false)
         setModalData({})
     }
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [window])
     return (
         <div>
             <div className='bg-slate-800  text-white md:pt-28 '>

@@ -6,12 +6,15 @@ import JoditEditor from 'jodit-react';
 import { categoryItem } from "../../utils/categoriesItem";
 import { HiMiniXCircle } from "react-icons/hi2";
 import { cloudinaryUpload } from "../../utils/getImageLink";
+import { useDispatch } from "react-redux";
+import { logOut } from "../../redux/features/Auth/authSlice";
 const MenageItem = () => {
     const editor = useRef(null);
+    const dispatch = useDispatch()
     const [imageUrl, setImageUrl] = useState('')
     const [content, setContent] = useState('')
     const [deleteLoading, setDeleteLoading] = useState(false)
-    const { data: itemData = [], error, isLoading, refetch } = useGetItemQuery()
+    const { data: itemData = [], error, isLoading, refetch, isError } = useGetItemQuery()
     const [modalData, setModalData] = useState({})
     const [isOpen, setIsOpen] = useState(false)
     const [updatePost] = useUpdateItemMutation(undefined)
@@ -58,6 +61,9 @@ const MenageItem = () => {
             setDeleteLoading(false)
         }
     }
+    if (isError) {
+        dispatch(logOut())
+    }
     return (
         <div>
             <div className="overflow-x-auto overflow-y-auto">
@@ -72,7 +78,7 @@ const MenageItem = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {itemData.map(item => (
+                        {!isLoading ? itemData.map(item => (
                             <tr key={item._id}>
                                 <td className="py-2 px-4 border-b border-gray-200"><img src={item.cover_image} alt={item.item} className="w-12 h-12 object-cover rounded" /></td>
                                 <td className="py-2 px-4 border-b border-gray-200 max-w-40">{item.title}</td>
@@ -83,7 +89,12 @@ const MenageItem = () => {
                                     <button onClick={() => handleDelete(item._id)} disabled={deleteLoading} className={`bg-red-500 text-white py-1 px-2 rounded hover:bg-red-700 transition duration-200 ${deleteLoading && 'cursor-not-allowed'}`}>Delete</button>
                                 </td>
                             </tr>
-                        ))}
+                        ))
+                            :
+                            (
+                                <div>loading.......</div>
+                            )
+                        }
                     </tbody>
                 </table>
             </div>

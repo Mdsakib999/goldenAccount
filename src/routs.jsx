@@ -6,6 +6,7 @@ import AdminDashboardLayout from './AdminDashboardLayout';
 import AddItem from './components/AdminDashbord/AddItem';
 import MenageItem from './components/AdminDashbord/MenageItem';
 import PrivetRoute from './PrivetRoute/PrivetRoute';
+import Dashbord from './components/AdminDashbord/Dashbord';
 
 export const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
         path: '/dashbord',
         element: <PrivetRoute><AdminDashboardLayout /></PrivetRoute>,
         children: [
+            {
+                path: '/dashbord',
+                element: <Dashbord />
+            },
             {
                 path: 'admin/add_item',
                 element: <AddItem />
